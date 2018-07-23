@@ -1,0 +1,2208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 27, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 34, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+html[data-agent*="Trident"] .section-video .blur {
+  display: none;
+}
+
+/* line 40, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+html[data-agent*="Trident"] .section-video .blur-ie {
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 46, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 50, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+body {
+  line-height: 1;
+  touch-action: manipulation;
+}
+
+/* line 55, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 58, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 61, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 66, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 70, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+i {
+  font-style: italic;
+}
+
+/* line 73, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 77, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+input, input:before, input:after {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 3, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+body, html {
+  font-family: "Comfortaa", sans-serif, bold;
+  height: 100%;
+}
+
+/* line 9, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='0'] {
+  padding-top: 0;
+}
+
+/* line 12, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='0'] {
+  padding-bottom: 0;
+}
+
+/* line 16, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='20'] {
+  padding-top: 20px;
+}
+
+/* line 19, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='20'] {
+  padding-bottom: 20px;
+}
+
+/* line 22, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='40'] {
+  padding-top: 40px;
+}
+
+/* line 25, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='40'] {
+  padding-bottom: 40px;
+}
+
+/* line 30, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-text-align="right"] .wrapper {
+  text-align: right;
+}
+
+/* line 35, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-text-align="left"] .wrapper {
+  text-align: left;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero {
+  background: white;
+  margin: 75px auto 115px auto;
+}
+
+/* line 5, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero .wrapper {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 1050px;
+  text-align: center;
+}
+
+/* line 11, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero .wrapper h1 {
+  margin: 15px;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+}
+
+/* line 18, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero .wrapper p {
+  font-size: 16px;
+  color: pink;
+  line-height: 35px;
+}
+
+/* line 24, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero .cta {
+  padding: 60px 0 60px 0;
+  text-align: center;
+  background: white;
+}
+
+/* line 28, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero .cta a {
+  border: 1px solid pink;
+  border-radius: 10px;
+  line-height: 45px;
+  font-size: 14px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #848789;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 38, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_hero.scss */
+.hero .cta a:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav {
+  width: 100%;
+  margin: 37px 0 75px 0;
+  font-size: 0;
+  /**
+			.search{
+				border: 1px solid pink;
+				border-radius: 10px;
+				padding: 5px;
+				color: #848789;
+				i {
+					font-size: 20px;
+				}
+				&:hover {
+					border: 1px solid #848789;
+					color: pink;
+				}
+			}
+		}
+**/
+}
+
+/* line 6, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left {
+  width: 70%;
+  display: inline-block;
+}
+
+/* line 9, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 13px;
+  color: #848789;
+  margin: 0 25px 0 25px;
+}
+
+/* line 17, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li a {
+  color: #848789;
+  text-decoration: none;
+}
+
+/* line 20, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li a:hover {
+  color: pink;
+}
+
+/* line 24, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li img {
+  width: 100px;
+}
+
+/* line 27, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li i {
+  font-size: 50px;
+  color: pink;
+}
+
+/* line 34, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right {
+  width: 30%;
+  display: inline-block;
+  text-align: right;
+}
+
+/* line 38, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li {
+  display: inline-block;
+  text-align: right;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 13px;
+  color: #848789;
+  margin: 0 25px 0 25px;
+}
+
+/* line 46, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li a {
+  color: #848789;
+  text-decoration: none;
+}
+
+/* line 49, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li a:hover {
+  color: pink;
+}
+
+/* line 54, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li a i.icon-zoom {
+  border: 1px solid pink;
+  border-radius: 10px;
+  padding: 5px;
+  color: #848789;
+  font-size: 20px;
+}
+
+/* line 60, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li a i.icon-zoom:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 86, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav:after {
+  content: '';
+  height: 1px;
+  background: pink;
+  display: block;
+  margin: 30px 35px 30px 35px;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?8chi7w");
+  src: url("fonts/icomoon.eot?8chi7w#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?8chi7w") format("truetype"), url("fonts/icomoon.woff?8chi7w") format("woff"), url("fonts/icomoon.svg?8chi7w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-times:before {
+  content: "\e900";
+}
+
+/* line 30, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tick:before {
+  content: "\e901";
+}
+
+/* line 33, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plus:before {
+  content: "\e902";
+}
+
+/* line 36, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-minus:before {
+  content: "\e903";
+}
+
+/* line 39, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-equals:before {
+  content: "\e904";
+}
+
+/* line 42, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-divide:before {
+  content: "\e905";
+}
+
+/* line 45, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-right:before {
+  content: "\e906";
+}
+
+/* line 48, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-left:before {
+  content: "\e907";
+}
+
+/* line 51, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-right-thick:before {
+  content: "\e908";
+}
+
+/* line 54, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-left-thick:before {
+  content: "\e909";
+}
+
+/* line 57, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-small:before {
+  content: "\e90a";
+}
+
+/* line 60, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-menu:before {
+  content: "\e90b";
+}
+
+/* line 63, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-list:before {
+  content: "\e90c";
+}
+
+/* line 66, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-large:before {
+  content: "\e90d";
+}
+
+/* line 69, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-home:before {
+  content: "\e90e";
+}
+
+/* line 72, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-forward:before {
+  content: "\e90f";
+}
+
+/* line 75, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-back:before {
+  content: "\e910";
+}
+
+/* line 78, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-rss:before {
+  content: "\e911";
+}
+
+/* line 81, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location:before {
+  content: "\e912";
+}
+
+/* line 84, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-link:before {
+  content: "\e913";
+}
+
+/* line 87, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-image:before {
+  content: "\e914";
+}
+
+/* line 90, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-up-thick:before {
+  content: "\e915";
+}
+
+/* line 93, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-down-thick:before {
+  content: "\e916";
+}
+
+/* line 96, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-starburst:before {
+  content: "\e917";
+}
+
+/* line 99, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-starburst-outline:before {
+  content: "\e918";
+}
+
+/* line 102, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-star:before {
+  content: "\e919";
+}
+
+/* line 105, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-children:before {
+  content: "\e91a";
+}
+
+/* line 108, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-export:before {
+  content: "\e91b";
+}
+
+/* line 111, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-delete:before {
+  content: "\e91c";
+}
+
+/* line 114, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-delete-outline:before {
+  content: "\e91d";
+}
+
+/* line 117, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cloud-storage:before {
+  content: "\e91e";
+}
+
+/* line 120, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-wi-fi:before {
+  content: "\e91f";
+}
+
+/* line 123, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-heart:before {
+  content: "\e920";
+}
+
+/* line 126, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flash:before {
+  content: "\e921";
+}
+
+/* line 129, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cancel:before {
+  content: "\e922";
+}
+
+/* line 132, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-backspace:before {
+  content: "\e923";
+}
+
+/* line 135, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-attachment:before {
+  content: "\e924";
+}
+
+/* line 138, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-move:before {
+  content: "\e925";
+}
+
+/* line 141, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-warning:before {
+  content: "\e926";
+}
+
+/* line 144, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user:before {
+  content: "\e927";
+}
+
+/* line 147, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-radar:before {
+  content: "\e928";
+}
+
+/* line 150, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-open:before {
+  content: "\e929";
+}
+
+/* line 153, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-closed:before {
+  content: "\e92a";
+}
+
+/* line 156, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location-arrow:before {
+  content: "\e92b";
+}
+
+/* line 159, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info:before {
+  content: "\e92c";
+}
+
+/* line 162, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-delete:before {
+  content: "\e92d";
+}
+
+/* line 165, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-add:before {
+  content: "\e92e";
+}
+
+/* line 168, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-pause:before {
+  content: "\e92f";
+}
+
+/* line 171, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-group:before {
+  content: "\e930";
+}
+
+/* line 174, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-pie:before {
+  content: "\e931";
+}
+
+/* line 177, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-line:before {
+  content: "\e932";
+}
+
+/* line 180, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-bar:before {
+  content: "\e933";
+}
+
+/* line 183, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-area:before {
+  content: "\e934";
+}
+
+/* line 186, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-video:before {
+  content: "\e935";
+}
+
+/* line 189, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-point-of-interest:before {
+  content: "\e936";
+}
+
+/* line 192, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-infinity:before {
+  content: "\e937";
+}
+
+/* line 195, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-globe:before {
+  content: "\e938";
+}
+
+/* line 198, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eye:before {
+  content: "\e939";
+}
+
+/* line 201, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cog:before {
+  content: "\e93a";
+}
+
+/* line 204, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-camera:before {
+  content: "\e93b";
+}
+
+/* line 207, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-upload:before {
+  content: "\e93c";
+}
+
+/* line 210, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-scissors:before {
+  content: "\e93d";
+}
+
+/* line 213, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-refresh:before {
+  content: "\e93e";
+}
+
+/* line 216, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pin:before {
+  content: "\e93f";
+}
+
+/* line 219, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-key:before {
+  content: "\e940";
+}
+
+/* line 222, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info-large:before {
+  content: "\e941";
+}
+
+/* line 225, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eject:before {
+  content: "\e942";
+}
+
+/* line 228, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-download:before {
+  content: "\e943";
+}
+
+/* line 231, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom:before {
+  content: "\e944";
+}
+
+/* line 234, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-out:before {
+  content: "\e945";
+}
+
+/* line 237, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-in:before {
+  content: "\e946";
+}
+
+/* line 240, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-numerically:before {
+  content: "\e947";
+}
+
+/* line 243, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-alphabetically:before {
+  content: "\e948";
+}
+
+/* line 246, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-input-checked:before {
+  content: "\e949";
+}
+
+/* line 249, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-calender:before {
+  content: "\e94a";
+}
+
+/* line 252, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-world:before {
+  content: "\e94b";
+}
+
+/* line 255, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-notes:before {
+  content: "\e94c";
+}
+
+/* line 258, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-code:before {
+  content: "\e94d";
+}
+
+/* line 261, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-sync:before {
+  content: "\e94e";
+}
+
+/* line 264, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-shuffle:before {
+  content: "\e94f";
+}
+
+/* line 267, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-repeat:before {
+  content: "\e950";
+}
+
+/* line 270, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-minimise:before {
+  content: "\e951";
+}
+
+/* line 273, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-maximise:before {
+  content: "\e952";
+}
+
+/* line 276, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-loop:before {
+  content: "\e953";
+}
+
+/* line 279, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-anchor:before {
+  content: "\e954";
+}
+
+/* line 282, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-spanner:before {
+  content: "\e955";
+}
+
+/* line 285, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-puzzle:before {
+  content: "\e956";
+}
+
+/* line 288, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-power:before {
+  content: "\e957";
+}
+
+/* line 291, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plane:before {
+  content: "\e958";
+}
+
+/* line 294, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pi:before {
+  content: "\e959";
+}
+
+/* line 297, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-phone:before {
+  content: "\e95a";
+}
+
+/* line 300, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-microphone:before {
+  content: "\e95b";
+}
+
+/* line 303, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-rewind:before {
+  content: "\e95c";
+}
+
+/* line 306, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flag:before {
+  content: "\e95d";
+}
+
+/* line 309, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-adjust-brightness:before {
+  content: "\e95e";
+}
+
+/* line 312, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-waves:before {
+  content: "\e95f";
+}
+
+/* line 315, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-twitter:before {
+  content: "\e960";
+}
+
+/* line 318, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-facebook:before {
+  content: "\e961";
+}
+
+/* line 321, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-dribbble:before {
+  content: "\e962";
+}
+
+/* line 324, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-stop:before {
+  content: "\e963";
+}
+
+/* line 327, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-record:before {
+  content: "\e964";
+}
+
+/* line 330, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-play:before {
+  content: "\e965";
+}
+
+/* line 333, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-fast-forward:before {
+  content: "\e966";
+}
+
+/* line 336, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-eject:before {
+  content: "\e967";
+}
+
+/* line 339, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-vimeo:before {
+  content: "\e968";
+}
+
+/* line 342, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-tumbler:before {
+  content: "\e969";
+}
+
+/* line 345, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-skype:before {
+  content: "\e96a";
+}
+
+/* line 348, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-pinterest:before {
+  content: "\e96b";
+}
+
+/* line 351, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-linkedin:before {
+  content: "\e96c";
+}
+
+/* line 354, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-last-fm:before {
+  content: "\e96d";
+}
+
+/* line 357, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-github:before {
+  content: "\e96e";
+}
+
+/* line 360, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-flickr:before {
+  content: "\e96f";
+}
+
+/* line 363, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-at:before {
+  content: "\e970";
+}
+
+/* line 366, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-times-outline:before {
+  content: "\e971";
+}
+
+/* line 369, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plus-outline:before {
+  content: "\e972";
+}
+
+/* line 372, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-minus-outline:before {
+  content: "\e973";
+}
+
+/* line 375, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tick-outline:before {
+  content: "\e974";
+}
+
+/* line 378, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-large-outline:before {
+  content: "\e975";
+}
+
+/* line 381, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-equals-outline:before {
+  content: "\e976";
+}
+
+/* line 384, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-divide-outline:before {
+  content: "\e977";
+}
+
+/* line 387, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-right-outline:before {
+  content: "\e978";
+}
+
+/* line 390, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-left-outline:before {
+  content: "\e979";
+}
+
+/* line 393, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-right-outline:before {
+  content: "\e97a";
+}
+
+/* line 396, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-left-outline:before {
+  content: "\e97b";
+}
+
+/* line 399, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-small-outline:before {
+  content: "\e97c";
+}
+
+/* line 402, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-menu-outline:before {
+  content: "\e97d";
+}
+
+/* line 405, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-list-outline:before {
+  content: "\e97e";
+}
+
+/* line 408, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-news:before {
+  content: "\e97f";
+}
+
+/* line 411, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-home-outline:before {
+  content: "\e980";
+}
+
+/* line 414, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-up-outline:before {
+  content: "\e981";
+}
+
+/* line 417, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-forward-outline:before {
+  content: "\e982";
+}
+
+/* line 420, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-down-outline:before {
+  content: "\e983";
+}
+
+/* line 423, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-back-outline:before {
+  content: "\e984";
+}
+
+/* line 426, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-trash:before {
+  content: "\e985";
+}
+
+/* line 429, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-rss-outline:before {
+  content: "\e986";
+}
+
+/* line 432, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-message:before {
+  content: "\e987";
+}
+
+/* line 435, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location-outline:before {
+  content: "\e988";
+}
+
+/* line 438, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-link-outline:before {
+  content: "\e989";
+}
+
+/* line 441, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-image-outline:before {
+  content: "\e98a";
+}
+
+/* line 444, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-export-outline:before {
+  content: "\e98b";
+}
+
+/* line 447, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cross:before {
+  content: "\e98c";
+}
+
+/* line 450, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-wi-fi-outline:before {
+  content: "\e98d";
+}
+
+/* line 453, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-star-outline:before {
+  content: "\e98e";
+}
+
+/* line 456, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-pause-outline:before {
+  content: "\e98f";
+}
+
+/* line 459, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-mail:before {
+  content: "\e990";
+}
+
+/* line 462, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-heart-outline:before {
+  content: "\e991";
+}
+
+/* line 465, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flash-outline:before {
+  content: "\e992";
+}
+
+/* line 468, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cancel-outline:before {
+  content: "\e993";
+}
+
+/* line 471, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-beaker:before {
+  content: "\e994";
+}
+
+/* line 474, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-move-outline:before {
+  content: "\e995";
+}
+
+/* line 477, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-watch:before {
+  content: "\e996";
+}
+
+/* line 480, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-warning-outline:before {
+  content: "\e997";
+}
+
+/* line 483, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-time:before {
+  content: "\e998";
+}
+
+/* line 486, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-radar-outline:before {
+  content: "\e999";
+}
+
+/* line 489, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-open-outline:before {
+  content: "\e99a";
+}
+
+/* line 492, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location-arrow-outline:before {
+  content: "\e99b";
+}
+
+/* line 495, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info-outline:before {
+  content: "\e99c";
+}
+
+/* line 498, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-backspace-outline:before {
+  content: "\e99d";
+}
+
+/* line 501, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-attachment-outline:before {
+  content: "\e99e";
+}
+
+/* line 504, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-outline:before {
+  content: "\e99f";
+}
+
+/* line 507, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-delete-outline:before {
+  content: "\e9a0";
+}
+
+/* line 510, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-add-outline:before {
+  content: "\e9a1";
+}
+
+/* line 513, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-closed-outline:before {
+  content: "\e9a2";
+}
+
+/* line 516, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-group-outline:before {
+  content: "\e9a3";
+}
+
+/* line 519, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-pie-outline:before {
+  content: "\e9a4";
+}
+
+/* line 522, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-line-outline:before {
+  content: "\e9a5";
+}
+
+/* line 525, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-bar-outline:before {
+  content: "\e9a6";
+}
+
+/* line 528, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-area-outline:before {
+  content: "\e9a7";
+}
+
+/* line 531, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-video-outline:before {
+  content: "\e9a8";
+}
+
+/* line 534, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-point-of-interest-outline:before {
+  content: "\e9a9";
+}
+
+/* line 537, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-map:before {
+  content: "\e9aa";
+}
+
+/* line 540, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-key-outline:before {
+  content: "\e9ab";
+}
+
+/* line 543, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-infinity-outline:before {
+  content: "\e9ac";
+}
+
+/* line 546, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-globe-outline:before {
+  content: "\e9ad";
+}
+
+/* line 549, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eye-outline:before {
+  content: "\e9ae";
+}
+
+/* line 552, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cog-outline:before {
+  content: "\e9af";
+}
+
+/* line 555, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-camera-outline:before {
+  content: "\e9b0";
+}
+
+/* line 558, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-upload-outline:before {
+  content: "\e9b1";
+}
+
+/* line 561, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-support:before {
+  content: "\e9b2";
+}
+
+/* line 564, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-scissors-outline:before {
+  content: "\e9b3";
+}
+
+/* line 567, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-refresh-outline:before {
+  content: "\e9b4";
+}
+
+/* line 570, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info-large-outline:before {
+  content: "\e9b5";
+}
+
+/* line 573, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eject-outline:before {
+  content: "\e9b6";
+}
+
+/* line 576, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-download-outline:before {
+  content: "\e9b7";
+}
+
+/* line 579, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-mid:before {
+  content: "\e9b8";
+}
+
+/* line 582, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-low:before {
+  content: "\e9b9";
+}
+
+/* line 585, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-high:before {
+  content: "\e9ba";
+}
+
+/* line 588, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-outline:before {
+  content: "\e9bb";
+}
+
+/* line 591, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-out-outline:before {
+  content: "\e9bc";
+}
+
+/* line 594, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-in-outline:before {
+  content: "\e9bd";
+}
+
+/* line 597, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tag:before {
+  content: "\e9be";
+}
+
+/* line 600, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tabs-outline:before {
+  content: "\e9bf";
+}
+
+/* line 603, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pin-outline:before {
+  content: "\e9c0";
+}
+
+/* line 606, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-message-typing:before {
+  content: "\e9c1";
+}
+
+/* line 609, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-directions:before {
+  content: "\e9c2";
+}
+
+/* line 612, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-full:before {
+  content: "\e9c3";
+}
+
+/* line 615, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-charge:before {
+  content: "\e9c4";
+}
+
+/* line 618, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pipette:before {
+  content: "\e9c5";
+}
+
+/* line 621, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pencil:before {
+  content: "\e9c6";
+}
+
+/* line 624, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-folder:before {
+  content: "\e9c7";
+}
+
+/* line 627, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-folder-delete:before {
+  content: "\e9c8";
+}
+
+/* line 630, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-folder-add:before {
+  content: "\e9c9";
+}
+
+/* line 633, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-edit:before {
+  content: "\e9ca";
+}
+
+/* line 636, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document:before {
+  content: "\e9cb";
+}
+
+/* line 639, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document-delete:before {
+  content: "\e9cc";
+}
+
+/* line 642, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document-add:before {
+  content: "\e9cd";
+}
+
+/* line 645, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-brush:before {
+  content: "\e9ce";
+}
+
+/* line 648, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\e9cf";
+}
+
+/* line 651, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-thumbs-down:before {
+  content: "\e9d0";
+}
+
+/* line 654, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pen:before {
+  content: "\e9d1";
+}
+
+/* line 657, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-numerically-outline:before {
+  content: "\e9d2";
+}
+
+/* line 660, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-alphabetically-outline:before {
+  content: "\e9d3";
+}
+
+/* line 663, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-last-fm-circular:before {
+  content: "\e9d4";
+}
+
+/* line 666, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-github-circular:before {
+  content: "\e9d5";
+}
+
+/* line 669, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-compass:before {
+  content: "\e9d6";
+}
+
+/* line 672, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-bookmark:before {
+  content: "\e9d7";
+}
+
+/* line 675, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-input-checked-outline:before {
+  content: "\e9d8";
+}
+
+/* line 678, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-code-outline:before {
+  content: "\e9d9";
+}
+
+/* line 681, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-calender-outline:before {
+  content: "\e9da";
+}
+
+/* line 684, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-business-card:before {
+  content: "\e9db";
+}
+
+/* line 687, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e9dc";
+}
+
+/* line 690, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-sync-outline:before {
+  content: "\e9dd";
+}
+
+/* line 693, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e9de";
+}
+
+/* line 696, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-repeat-outline:before {
+  content: "\e9df";
+}
+
+/* line 699, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-loop-outline:before {
+  content: "\e9e0";
+}
+
+/* line 702, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e9e1";
+}
+
+/* line 705, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-switch:before {
+  content: "\e9e2";
+}
+
+/* line 708, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-parallel:before {
+  content: "\e9e3";
+}
+
+/* line 711, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-merge:before {
+  content: "\e9e4";
+}
+
+/* line 714, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document-text:before {
+  content: "\e9e5";
+}
+
+/* line 717, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-clipboard:before {
+  content: "\e9e6";
+}
+
+/* line 720, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-calculator:before {
+  content: "\e9e7";
+}
+
+/* line 723, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-minimise-outline:before {
+  content: "\e9e8";
+}
+
+/* line 726, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-maximise-outline:before {
+  content: "\e9e9";
+}
+
+/* line 729, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e9ea";
+}
+
+/* line 732, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-gift:before {
+  content: "\e9eb";
+}
+
+/* line 735, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-film:before {
+  content: "\e9ec";
+}
+
+/* line 738, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-database:before {
+  content: "\e9ed";
+}
+
+/* line 741, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-bell:before {
+  content: "\e9ee";
+}
+
+/* line 744, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-anchor-outline:before {
+  content: "\e9ef";
+}
+
+/* line 747, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-adjust-contrast:before {
+  content: "\e9f0";
+}
+
+/* line 750, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-world-outline:before {
+  content: "\e9f1";
+}
+
+/* line 753, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-shopping-bag:before {
+  content: "\e9f2";
+}
+
+/* line 756, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-power-outline:before {
+  content: "\e9f3";
+}
+
+/* line 759, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-notes-outline:before {
+  content: "\e9f4";
+}
+
+/* line 762, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-tablet:before {
+  content: "\e9f5";
+}
+
+/* line 765, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-phone:before {
+  content: "\e9f6";
+}
+
+/* line 768, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-laptop:before {
+  content: "\e9f7";
+}
+
+/* line 771, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-desktop:before {
+  content: "\e9f8";
+}
+
+/* line 774, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-briefcase:before {
+  content: "\e9f9";
+}
+
+/* line 777, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-stopwatch:before {
+  content: "\e9fa";
+}
+
+/* line 780, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-spanner-outline:before {
+  content: "\e9fb";
+}
+
+/* line 783, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-puzzle-outline:before {
+  content: "\e9fc";
+}
+
+/* line 786, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-printer:before {
+  content: "\e9fd";
+}
+
+/* line 789, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pi-outline:before {
+  content: "\e9fe";
+}
+
+/* line 792, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lightbulb:before {
+  content: "\e9ff";
+}
+
+/* line 795, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flag-outline:before {
+  content: "\ea00";
+}
+
+/* line 798, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-contacts:before {
+  content: "\ea01";
+}
+
+/* line 801, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-archive:before {
+  content: "\ea02";
+}
+
+/* line 804, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-stormy:before {
+  content: "\ea03";
+}
+
+/* line 807, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-shower:before {
+  content: "\ea04";
+}
+
+/* line 810, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-partly-sunny:before {
+  content: "\ea05";
+}
+
+/* line 813, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-downpour:before {
+  content: "\ea06";
+}
+
+/* line 816, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-cloudy:before {
+  content: "\ea07";
+}
+
+/* line 819, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plane-outline:before {
+  content: "\ea08";
+}
+
+/* line 822, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-phone-outline:before {
+  content: "\ea09";
+}
+
+/* line 825, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-microphone-outline:before {
+  content: "\ea0a";
+}
+
+/* line 828, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-windy:before {
+  content: "\ea0b";
+}
+
+/* line 831, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-windy-cloudy:before {
+  content: "\ea0c";
+}
+
+/* line 834, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-sunny:before {
+  content: "\ea0d";
+}
+
+/* line 837, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-snow:before {
+  content: "\ea0e";
+}
+
+/* line 840, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-night:before {
+  content: "\ea0f";
+}
+
+/* line 843, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-stop-outline:before {
+  content: "\ea10";
+}
+
+/* line 846, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-rewind-outline:before {
+  content: "\ea11";
+}
+
+/* line 849, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-record-outline:before {
+  content: "\ea12";
+}
+
+/* line 852, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-play-outline:before {
+  content: "\ea13";
+}
+
+/* line 855, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-fast-forward-outline:before {
+  content: "\ea14";
+}
+
+/* line 858, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-eject-outline:before {
+  content: "\ea15";
+}
+
+/* line 861, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-wine:before {
+  content: "\ea16";
+}
+
+/* line 864, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-waves-outline:before {
+  content: "\ea17";
+}
+
+/* line 867, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-ticket:before {
+  content: "\ea18";
+}
+
+/* line 870, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tags:before {
+  content: "\ea19";
+}
+
+/* line 873, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plug:before {
+  content: "\ea1a";
+}
+
+/* line 876, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-headphones:before {
+  content: "\ea1b";
+}
+
+/* line 879, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-credit-card:before {
+  content: "\ea1c";
+}
+
+/* line 882, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-coffee:before {
+  content: "\ea1d";
+}
+
+/* line 885, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-book:before {
+  content: "\ea1e";
+}
+
+/* line 888, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-beer:before {
+  content: "\ea1f";
+}
+
+/* line 891, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume:before {
+  content: "\ea20";
+}
+
+/* line 894, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume-up:before {
+  content: "\ea21";
+}
+
+/* line 897, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume-mute:before {
+  content: "\ea22";
+}
+
+/* line 900, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume-down:before {
+  content: "\ea23";
+}
+
+/* line 903, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-vimeo-circular:before {
+  content: "\ea24";
+}
+
+/* line 906, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-twitter-circular:before {
+  content: "\ea25";
+}
+
+/* line 909, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-pinterest-circular:before {
+  content: "\ea26";
+}
+
+/* line 912, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-linkedin-circular:before {
+  content: "\ea27";
+}
+
+/* line 915, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-facebook-circular:before {
+  content: "\ea28";
+}
+
+/* line 918, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-dribbble-circular:before {
+  content: "\ea29";
+}
+
+/* line 921, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tree:before {
+  content: "\ea2a";
+}
+
+/* line 924, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-thermometer:before {
+  content: "\ea2b";
+}
+
+/* line 927, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-tumbler-circular:before {
+  content: "\ea2c";
+}
+
+/* line 930, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-skype-outline:before {
+  content: "\ea2d";
+}
+
+/* line 933, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-flickr-circular:before {
+  content: "\ea2e";
+}
+
+/* line 936, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-at-circular:before {
+  content: "\ea2f";
+}
+
+/* line 939, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-shopping-cart:before {
+  content: "\ea30";
+}
+
+/* line 942, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-messages:before {
+  content: "\ea31";
+}
+
+/* line 945, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-leaf:before {
+  content: "\ea32";
+}
+
+/* line 948, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-feather:before {
+  content: "\ea33";
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery {
+  font-size: 0;
+  width: 1180px;
+  margin: 115px auto 75px auto;
+}
+
+/* line 6, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div {
+  display: inline-block;
+  width: 295px;
+  height: 885px;
+  vertical-align: top;
+}
+
+/* line 12, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .big {
+  width: 295px;
+  height: 590px;
+  font-size: 20px;
+}
+
+/* line 17, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .small {
+  width: 295px;
+  height: 295px;
+  font-size: 20px;
+}
+
+/* line 22, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink {
+  background: pink;
+}
+
+/* line 25, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink95 {
+  background: #ffe6ea;
+}
+
+/* line 28, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink90 {
+  background: #ffccd5;
+}
+
+/* line 31, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink85 {
+  background: #ffb3bf;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup {
+  background: white;
+  padding: 100px 0;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .wrapper {
+  width: 100%;
+  max-width: 1050px;
+  margin: 75px auto 75px auto;
+  text-align: center;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .wrapper h1 {
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .wrapper p {
+  font-size: 14px;
+  color: #848789;
+  line-height: 35px;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta {
+  text-align: center;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta a {
+  border: 1px solid pink;
+  border-radius: 0 10px 10px 0;
+  margin-left: -4px;
+  line-height: 43px;
+  font-size: 14px;
+  display: inline-block;
+  color: #848789;
+  background: pink;
+  text-decoration: none;
+  vertical-align: top;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta a:hover {
+  border: 1px solid #848789;
+  background: #848789;
+  color: pink;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta .input {
+  line-height: 40px;
+  width: 475px;
+  font-size: 17px;
+  color: pink;
+  border-radius: 10px 0 0 10px;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info {
+  padding: 50px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* line 8, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info h1 {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+  line-height: 1.6;
+}
+
+/* line 16, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info h2 {
+  margin: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #848789;
+}
+
+/* line 24, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info p {
+  font-size: 10px;
+  color: #848789;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* line 30, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info em {
+  font-size: 12px;
+  color: #848789;
+  line-height: 1.6;
+  font-style: italic;
+  display: block;
+}
+
+/* line 37, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info i {
+  color: #848789;
+  font-size: 40px;
+}
+
+/* line 41, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info .icon {
+  max-width: 140px;
+  height: 50px;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* line 47, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info .icon:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  content: '';
+  height: 1px;
+  background: #848789;
+}
+
+/* line 56, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info .icon:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 25px;
+  content: '';
+  height: 1px;
+  background: #848789;
+}
+
+/* line 1, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel {
+  margin: 115px auto 45px auto;
+  background: #ffe6ea;
+  width: 1100px;
+  height: 120px;
+  position: relative;
+}
+
+/* line 7, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .left {
+  display: block;
+  width: 40px;
+  height: 120px;
+  position: absolute;
+  background: pink;
+  text-decoration: none;
+  left: -40px;
+}
+
+/* line 15, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .left i {
+  font-size: 30px;
+  color: #ffe6ea;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 23, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .left i.icon-chevron-left:before {
+  position: relative;
+  left: 2px;
+}
+
+/* line 31, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .right {
+  display: block;
+  width: 40px;
+  height: 120px;
+  left: 100%;
+  position: absolute;
+  vertical-align: middle;
+  background: pink;
+  text-decoration: none;
+}
+
+/* line 40, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .right i {
+  font-size: 30px;
+  color: #ffe6ea;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 2, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 1180px;
+  height: 150px;
+  margin: 45px auto 45px auto;
+}
+
+/* line 9, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list {
+  display: inline-block;
+  width: 290px;
+  height: 150px;
+  vertical-align: top;
+  padding: 15px 0 15px 0;
+  position: relative;
+}
+
+/* line 17, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li {
+  text-align: left;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 12px;
+  color: #848789;
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+}
+
+/* line 24, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li a {
+  color: #848789;
+  text-decoration: none;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+/* line 31, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li a:hover {
+  color: pink;
+}
+
+/* line 36, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li i {
+  border: 1px solid pink;
+  border-radius: 7px;
+  padding: 2px;
+  color: #848789;
+  font-size: 12px;
+  line-height: 3;
+  margin-right: 5px;
+}
+
+/* line 44, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li i:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 51, /Volumes/KINGSTON/EDIT/HTML CSS/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list:not(:last-child):after {
+  position: absolute;
+  width: 1px;
+  content: '';
+  height: 150px;
+  background: pink;
+  top: 0;
+  right: 0;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=../css/mixing.map */

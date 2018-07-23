@@ -1,0 +1,36 @@
+.related{
+	width: 1180px;
+	height: 45px;
+	border: 1px solid pink;
+	margin: 40px auto 20px auto;
+	position: relative;
+	text-align: center;
+	padding: 15px;
+	a{
+		text-transform: uppercase;
+		color: #848789;
+		font-size: 15px;
+		margin: auto;
+		text-decoration: none;
+		text-align: center;;
+			&:hover {
+				color: pink;
+				}
+	}
+	@include mq(0,1180px){
+		width: 885px;
+		margin:20px auto 45px auto;
+	}
+	@include mq(0,885px){
+		width: 590px;
+		margin:20px auto 45px auto;
+	}
+	@include mq(0,600px){
+		width: 295px;
+		margin:20px auto 0 auto;
+			a{
+				font-size: 11px;
+				padding: 5px;
+			}
+	}	
+}

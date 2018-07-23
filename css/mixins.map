@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/mixins.css",
+	"sources": [
+		"../scss/mixins.scss"
+	],
+	"sourcesContent": [
+		"/* Media Query */\n@mixin mq($smallerValue,$biggerValue) {\n @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {\n   @content;\n }\n}\n/* @include mq(min,max){} */\n\n\n\n@mixin titleFont {\n}\n/* @include titleFont; */\n"
+	],
+	"mappings": "AAAA,iBAAiB;AAMjB,4BAA4B;AAM5B,yBAAyB",
+	"names": []
+}

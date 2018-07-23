@@ -1,0 +1,83 @@
+.logForm{
+  position: fixed;
+  display: none;
+  top: 80px;
+  left: 0px;
+  //transition: .3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999999999999999;
+
+
+#logIn{
+  margin:40px auto 0 auto;
+  text-align: center;
+    label{
+      margin: 40px auto 0 auto;
+      display: block;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+    }
+    .nameEmail{
+      display: inline-block;
+        label{
+          display: block;
+        }
+        input{
+          width: 280px;
+          height: 40px;
+          margin: 10px 20px;
+          display: block;
+          border-radius: 5px;
+          border: 1px solid pink;
+          font-size: 12px;
+          color: #848789;
+        }
+    }
+    a{
+      width: 95px;
+      text-align: center;
+      border: 1px solid pink;
+      border-radius: 10px;
+      line-height: 45px;
+      font-size: 14px;
+      display: block;
+      margin: 20px auto;
+      text-transform: uppercase;
+      color: #848789;
+      text-decoration: none;
+      padding: 0px 20px 0px 20px;
+        &:hover {
+          border: 1px solid #848789;
+          color: pink;
+        }
+    }
+        .register{
+         text-align: center;
+         font-size: 12px; 
+         text-transform: uppercase;
+         color: #848789;
+         line-height: 0px;
+         //background-color: rgba(255, 255, 255, 0.7);
+         text-decoration: none;
+         width: auto;
+         border: none;
+         border-radius: 0;
+         padding: 0px;
+              &:hover {
+              border: 0px;
+              color: pink;
+            }
+        }
+ }
+    @include mq(0,1180px){
+      top: 70px;
+    }
+     @include mq (0,600px){
+        top: 46px;
+    }
+
+}

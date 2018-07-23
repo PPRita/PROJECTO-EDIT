@@ -1,0 +1,90 @@
+.menuMobile{
+  width: 26px;
+  height: 24px;
+  position: relative;
+        /*hamburguer icon*/
+        span{
+          cursor: pointer;
+          display: block;
+          position: absolute;
+          width: 26px;
+        }
+        span:before,span:after {
+          border-radius: 2px;
+          background-color: #848789;
+          content: '';
+          display: block;
+          height: 4px;
+          //transition: all 200ms ease-in-out;
+        }
+        span:before {
+          box-shadow: 0 10px 0 #ffb3bf;
+          margin-bottom: 16px;
+        }
+        span:hover:before {
+          box-shadow: 0 0 0 #323334;
+          transform: translateY(10px) rotate(45deg);
+        }
+        span:hover:after{
+          transform: translateY(-10px) rotate(-45deg);
+        }
+        /*end hamburguer icon*/
+}
+
+.btnContainer{
+  position: fixed;
+  display: none;
+  top: 70px;
+  left: 0px;
+  //transition: .3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 1px;
+  padding: 5px;
+  z-index: 9999999999999999;
+    li{
+        margin-top: 20px;
+        display: block;
+       a{
+        text-decoration: none;
+          p{
+           text-transform: uppercase;
+           text-align: center;
+           color: #ffb3bf;
+           font-size: 20px;
+           margin-top: 10px;
+            &:hover{
+               color: deeppink;
+           }
+          }
+       }
+    }
+    @include mq (0,600px){
+        top: 46px;
+    }
+ }
+.searchBar{
+          margin: 0 auto 40px auto;
+          width:300px;
+          text-align: center;
+          input{
+                width:80%;
+                border-bottom: 1px solid pink;
+                margin: 0 auto;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                background-color: transparent;
+                color: pink;
+                font-size: 20px;
+            }
+            i {
+              &.icon-zoom {
+                display: inline-block;
+                color: pink;
+                font-size: 15px;
+                vertical-align: middle;
+              }
+            }
+}

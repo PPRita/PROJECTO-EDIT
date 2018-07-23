@@ -1,0 +1,169 @@
+.details{
+			width: 1180px;
+            height: 595px;
+			margin: 30px auto 10px auto;
+			border-radius: 30px 0 0 0;
+			position: relative;
+			top: 0;
+			left: 0;
+            overflow: hidden;
+
+            span{
+                    position: absolute;
+                    background-color: pink;
+                    height: 83px;
+                    width: 277px;
+                    left: -102px;
+                    top: -6px;
+                    z-index: 6;
+                    transform: rotate(313deg);
+                    color: white;
+                    font-size: 25px;
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: 20px;
+                    line-height: 30px;
+           }
+				#imageDetail{
+					max-width: 100%;
+		    		width:100%;
+					border-radius: 25px 0 0 0;
+                    position: relative;
+					top: 50%;
+                    transform: translatey(-50%);
+
+
+				}
+		ul{
+			position: absolute;
+			width: 5%;
+			right: 30px;
+    		bottom: 20px;
+            z-index: 100000;
+				.imageSmall{
+                    position: relative;
+                    width: 70px;
+                    height: 70px;
+                    margin-top: 20px;
+                    overflow: hidden;
+                    border-radius: 15px 0 0 0;
+                    border: 1px solid pink;
+                    cursor: pointer;
+                    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.5);
+                    transition: all .35s ease-in-out; 
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                        &:hover{
+                            transform: scale(1.2);
+                            z-index: 4;
+                        }
+    
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 0 0 0 0;
+                        }
+    
+				}
+		}
+	
+		@include mq(0,1180px){
+			width: 885px;
+            height: 446px;
+                span{
+                    display:none;
+                }
+                .imageSmall{
+                    right: 25px;
+    		        bottom: 20px;
+                    li{
+                        width:50px;
+                        height:50px;
+                    }
+            }
+		}
+		@include mq(0,885px){
+			width: 590px;
+            height: 298px;
+                span{
+                    display:none;
+                }
+                .imageSmall{
+                    right: 20px;
+    		        bottom: 10px;
+                        li{
+                            width:40px;
+                            height:40px;
+                            margin-top: 10px;
+                                &:first-child{
+                                    margin-top: 0;
+                                }
+                        }
+            }
+		}
+       @include mq(0,600px){
+            width: 370px;
+            height: 151px;
+             span{
+                    display:none;
+                }
+                .imageSmall{
+                    display:none;
+                }
+        }  
+}
+
+
+.jsZoomTouch:after {
+
+  content: 'Pinch to Zoom';
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+.jsZoomMouse{
+    width: 100px;
+    height:100px;
+}
+
+
+
+
+
+
+
+.mobileSmallPic{
+    display: none;
+    width: 370px;
+    margin: 0 auto;
+        ul{
+            margin: 0 auto;
+            text-align: center;
+            .imageSmall{
+                display: inline-block;
+                margin: 0 auto;
+                position: relative;
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                border-radius: 15px 0 0 0;
+                cursor: pointer;
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                   
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 0 0 0 0;
+                        }
+                    
+                }
+        }
+        @include mq(0,600px){
+            display: block;
+        }
+}

@@ -1,0 +1,50 @@
+.sector{
+	width: 100%;
+	margin: 10px 25px;
+	font-size: 0;
+	ul{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		li{
+			display: inline-block;
+			text-align: left;
+			vertical-align: middle;
+			font-family: $primary-font;
+			font-size:10px;
+			color:#848789;
+			text-transform: uppercase;
+			margin: 0 10px 0 10px;
+				a{
+					color:#848789;
+					text-decoration: none;
+					&:hover {
+						color: pink;
+					}
+					@include mq(0,600px){
+						font-size: 8px;
+					}
+				}
+                &:not(:last-child):after{
+                position: absolute;
+                width: 1px;
+                margin: auto 10px auto 10px;
+                content: '';
+                height: 10px;
+                background: pink;
+                vertical-align: middle;
+                transform: rotate(20deg);
+                }	
+			}	
+        li:last-child{
+            font-weight: bold;
+            a{
+                color: pink;
+            }
+        }
+	}
+	@include mq(0,600px){
+		text-align: center;
+		margin: 0 auto;
+	}	
+}

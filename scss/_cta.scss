@@ -1,0 +1,23 @@
+.cta{
+	margin-top: 50px auto 20px auto;
+	text-align: center;
+		a{
+			border: 1px solid pink;
+			line-height: 45px;
+			font-size: 14px;
+			display: inline-block;
+			text-transform: uppercase;
+			color: #848789;
+			text-decoration: none;
+			padding: 0px 20px 0px 20px;
+			border-radius: 10px;
+			text-align: center;
+				&:hover {
+					border: 1px solid #848789;
+					color: pink;
+					}
+			@include mq(0,600px){
+				font-size: 12px;
+			}
+		}
+}

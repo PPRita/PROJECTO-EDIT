@@ -1,0 +1,199 @@
+.sectorCards{
+	width:100%;
+	margin: 30px auto 20px auto;
+	font-size: 0;
+	text-align: center;
+	display: inline-block;
+	
+	.title{
+		margin: 0 auto;
+		display: block;
+		h1{
+			display: inline-block;
+			margin: 15px;
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #848789;
+			text-align: center;
+		}
+		span.result{
+			color:pink;
+			font-weight: initial;
+		}
+		a{	
+			text-align: center;
+			font-size: 12px;
+			color: #848789;
+			font-style: italic;
+			display: block;
+			text-transform: lowercase;
+			text-decoration: none;
+				&:hover{
+					color: pink;
+				}
+		}
+		p{
+			display: block;
+			text-align: center;
+			font-size: 12px;
+			color: #848789;
+		}
+		i{
+			font-size: 10px;
+			display: inline-block;
+			margin-left: 5px;
+			color: pink;
+		}
+	}
+		ul{
+			.productImage{
+				display: inline-block;
+                transition: all 0.7s ease-in-out;
+				a{
+					width:210px;
+					height:260px;
+					margin:40px;
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 2;
+                    transition: all 0.2s ease-in-out;
+                    border-radius: 30px 0 0 0;
+					box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.42);
+					opacity: 0.9;
+                     &:before {
+                        content:'';
+                        position: absolute;
+                        border-radius: 30px 0 0 0;
+                        width: 200px;
+                        height: 250px;
+                        top: 4px;
+    					left: 4px;
+                        z-index: 2;
+                        border: 1px solid white;
+                        opacity: 0.7;
+                        transition: all 0.2s ease-in-out;
+                    }
+
+                      span{
+			        	color: white;
+					    font-size:15px;
+					    font-weight: bold;
+					    text-transform: uppercase;
+					    line-height: 1.6;
+					    position: absolute;
+					    bottom: 15px;
+					    right: 10px;
+					    transform: rotate(-45deg);
+					    ransition: all 0.2s ease;
+					    z-index:2;
+					    	&:after{
+							    content:'new';
+							    width: 150px;
+							    height:300px;
+							    background-color: #848789;
+							    position: absolute;
+							    bottom: -275px;
+							    right: -72px;
+							    box-shadow: -1px -1px 5px 0px rgba(255,255,255,1);
+							    opacity: 0.9;
+							  }
+			        	}
+                    
+                    &:hover {
+                        transform: scale(1.05);
+                        opacity: 1;
+                         &:before{
+                             transform: scale(0.9);
+                             opacity: 0;
+                         }
+                         span{
+                         	font-size: 20px;
+                         	right: 5px;
+                         	transform: scale(1.2)rotate(-45deg);
+                         		&:after{
+                         			bottom: -250px;
+							   		right: -72px;
+                         		}
+                         }
+                    }
+				}
+                    
+				img{
+					max-width:100%;
+				}
+        .infoPic{
+            position: relative;
+            transform: translateY(-50%);
+            text-align: center;
+					h2{
+	                    top:0;
+	                    left:0;
+						margin: 12px auto 7px auto;
+						font-size:10px;
+						text-align: center;
+						font-weight: bold;
+						color: #848789;
+					}
+				p{
+					margin: 7px auto 7px auto;
+					font-size:10px;
+					text-align: center;
+					color: #848789;
+				}
+			}	
+		.btnDetails{
+			text-align: center;
+			vertical-align: middle;
+			margin: -40px;
+				.link{
+					border: 1px solid pink;
+					line-height: 20px;
+					font-size: 14px;
+					height: 20px;
+					width: 100px;
+					display: inline-block;
+					text-transform: uppercase;
+					color: #848789;
+					text-decoration: none;
+					padding: 0px 20px 0px 20px;
+					border-radius: 10px;
+					text-align: center;
+					box-shadow: -1px -1px 5px 0px rgba(255,255,255,1);
+                    transition: all .35s ease-in-out; 
+						&:hover {
+							border: 1px solid #848789;
+							color: pink;
+							}
+						&:before{
+							background-color: lightgrey;
+							opacity: 0.2;
+						}
+				}
+			}
+
+
+        }
+    }
+}
+    
+  /*---MEDIA QUERIES---*/
+    @include mq(0,1180px){
+        ul{
+          margin: 0 auto;
+          width: 600px;
+        }
+    }
+    @include mq(0,600px){
+		.title{
+			h1{
+				font-size: 20px;
+			}
+		}
+        ul{
+        	margin: 0 auto;
+            width: 100%;
+        }
+}
+		

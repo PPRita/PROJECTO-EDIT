@@ -1,0 +1,4324 @@
+@charset "UTF-8";
+/* Generic imports */
+/* Media Query */
+/* @include mq(min,max){} */
+/* @include titleFont; */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+html[data-agent*="Trident"] .section-video .blur {
+  display: none;
+}
+
+/* line 40, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+html[data-agent*="Trident"] .section-video .blur-ie {
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 46, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+body {
+  line-height: 1;
+  touch-action: manipulation;
+}
+
+/* line 55, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 58, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 61, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 70, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+i {
+  font-style: italic;
+}
+
+/* line 73, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 77, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_reset.scss */
+input, input:before, input:after {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 3, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+body, html {
+  font-family: "Comfortaa", sans-serif, bold;
+  height: 100%;
+}
+
+/* line 8, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+body {
+  padding-top: 80px;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 8, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+  body {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 8, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='0'] {
+  padding-top: 0;
+}
+
+/* line 21, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='0'] {
+  padding-bottom: 0;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='20'] {
+  padding-top: 20px;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='20'] {
+  padding-bottom: 20px;
+}
+
+/* line 31, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='40'] {
+  padding-top: 40px;
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='40'] {
+  padding-bottom: 40px;
+}
+
+/* line 37, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-top='60'] {
+  padding-top: 60px;
+}
+
+/* line 40, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-margin-bottom='60'] {
+  padding-bottom: 60px;
+}
+
+/* line 45, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-text-align="right"] .wrapper {
+  text-align: right;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_config.scss */
+section[data-text-align="left"] .wrapper {
+  text-align: left;
+}
+
+/* Moldue imports */
+/* line 2, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header {
+  margin: 20px auto 0 auto;
+  width: 1180px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 10, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 16, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider .imagesSlider {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  display: inline-block;
+}
+
+/* line 21, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider .imagesSlider li {
+  vertical-align: middle;
+  display: inline-block;
+  opacity: 0.8;
+  transform: translateY(-195%);
+}
+
+/* line 26, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider .imagesSlider li img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  transform: translateY(-10%);
+}
+
+/* line 38, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .arrowL {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  cursor: pointer;
+  color: pink;
+  z-index: 4;
+  font-size: 20px;
+  text-shadow: 0px 0px 7px #323334;
+}
+
+/* line 47, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .arrowL:hover {
+  transform: scale(1.3);
+}
+
+/* line 53, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .arrowR {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  cursor: pointer;
+  color: pink;
+  z-index: 4;
+  font-size: 20px;
+  text-shadow: 0px 0px 7px #323334;
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .arrowR:hover {
+  transform: scale(1.3);
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .wrapper {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 1050px;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  height: 120px;
+}
+
+/* line 79, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .wrapper h1 {
+  margin: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* line 87, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .wrapper p {
+  font-size: 16px;
+  color: white;
+  line-height: 35px;
+  text-shadow: 1px 1px 0.5px black;
+}
+
+/* line 95, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .btn {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 41%;
+}
+
+/* line 100, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .btn a {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid pink;
+  border-radius: 10px;
+  line-height: 45px;
+  font-size: 14px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #848789;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 112, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .btn a:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 121, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider-dots {
+  width: 100%;
+  height: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 4;
+  transform: translateX(-5%);
+}
+
+/* line 134, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border-radius: 7px;
+  background-color: pink;
+  opacity: 0.5;
+  transition: color 0.5s;
+  box-shadow: 0px 0px 7px #323334;
+}
+
+/* line 146, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+.header .slider-dots .active-dot {
+  opacity: 1;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border-radius: 7px;
+  background-color: pink;
+  transition: color 0.5s;
+  box-shadow: 0px 0px 7px #323334;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 2, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header {
+    width: 590px;
+    height: 200px;
+  }
+  /* line 180, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .wrapper {
+    top: 25%;
+    left: 2%;
+  }
+  /* line 183, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .wrapper h1 {
+    font-size: 30px;
+    text-shadow: 1px 1px 0.5px black;
+  }
+  /* line 187, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .wrapper p {
+    font-size: 10px;
+    margin: -10px;
+    text-shadow: 1px 1px 0.5px black;
+  }
+  /* line 193, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .btn {
+    top: 70%;
+    left: 38%;
+  }
+  /* line 196, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .btn a {
+    line-height: 25px;
+    font-size: 10px;
+  }
+  /* line 201, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .slider-dots {
+    bottom: 0%;
+    left: 7%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 560px) {
+  /* line 2, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header {
+    width: 100%;
+    height: 150px;
+  }
+  /* line 209, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .wrapper {
+    top: 25%;
+    left: 0%;
+  }
+  /* line 212, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .wrapper h1 {
+    font-size: 20px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+  }
+  /* line 216, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .wrapper p {
+    font-size: 8px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+  }
+  /* line 221, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .btn {
+    top: 65%;
+    left: 30%;
+  }
+  /* line 225, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_header.scss */
+  .header .slider-dots {
+    bottom: 0%;
+    left: 5%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav {
+  width: 100%;
+  height: 84px;
+  font-size: 0;
+  position: fixed;
+  padding: 10px 0;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999999;
+  background-color: white;
+  /*----left menu----*/
+  /*----end left menu----*/
+  /*----right menu----*/
+  /*----end right menu----*/
+}
+
+/* line 14, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left {
+  width: 60%;
+  display: inline-block;
+}
+
+/* line 17, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 13px;
+  color: #848789;
+  margin: 0 25px 0 25px;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li a {
+  color: #848789;
+  text-decoration: none;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li a:hover {
+  color: pink;
+}
+
+/* line 32, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li p {
+  color: #848789;
+}
+
+/* line 35, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li img {
+  width: 70px;
+}
+
+/* line 38, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li i {
+  text-align: left;
+  font-size: 25px;
+  color: #848789;
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li i.icon-th-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 46, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li i.icon-th-menu:hover {
+  color: pink;
+}
+
+/* line 51, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .left li:first-child {
+  display: none;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 14, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .left {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    text-align: left;
+  }
+  /* line 61, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .left li {
+    display: none;
+  }
+  /* line 63, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .left li:first-child {
+    display: block;
+  }
+}
+
+/* line 74, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right {
+  width: 40%;
+  text-align: right;
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 80, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li {
+  display: inline-block;
+  text-align: right;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 13px;
+  color: #848789;
+  margin: 0 25px 0 5px;
+}
+
+/* line 88, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li:hover input {
+  width: 120px;
+  border-radius: 5px 0 0 5px;
+  border-width: 1px;
+  border-style: solid;
+  transition: all .5s ease-in-out;
+}
+
+/* line 96, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li a {
+  display: inline-block;
+  color: #848789;
+  text-decoration: none;
+}
+
+/* line 100, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li a:hover {
+  color: pink;
+}
+
+/* line 104, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li p {
+  display: inline-block;
+}
+
+/* line 107, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li em {
+  display: inline-block;
+  color: pink;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/* line 112, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li em:hover {
+  color: #848789;
+}
+
+/* line 117, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li i.icon-zoom {
+  display: inline-block;
+  color: #848789;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* line 122, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right li i.icon-zoom:hover {
+  color: pink;
+}
+
+/* line 128, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .right .input {
+  line-height: 20px;
+  width: 0;
+  font-size: 10px;
+  color: pink;
+  border: none;
+  vertical-align: middle;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 128, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right .input {
+    display: none;
+  }
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 74, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 143, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li {
+    vertical-align: middle;
+    margin: 0 5px 0 5px;
+  }
+  /* line 146, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li p {
+    font-size: 0;
+  }
+  /* line 149, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li em {
+    display: none;
+  }
+  /* line 153, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li i.icon-gift {
+    color: #848789;
+    font-size: 20px;
+  }
+  /* line 156, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li i.icon-gift:hover {
+    color: pink;
+  }
+  /* line 160, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li i.icon-user {
+    color: #848789;
+    font-size: 20px;
+  }
+  /* line 163, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li i.icon-user:hover {
+    color: pink;
+  }
+  /* line 167, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li i.icon-zoom {
+    display: none;
+  }
+  /* line 170, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right li i:last-child {
+    margin-right: 20px;
+  }
+}
+
+/* line 177, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav .centerLogo {
+  display: none;
+}
+
+/* line 180, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+nav:after {
+  content: '';
+  height: 1px;
+  background: pink;
+  display: block;
+  margin: 0 25px 15px 25px;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav {
+    padding: 10px 0;
+    font-size: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999999;
+    overflow: hidden;
+    background-color: #323334;
+    box-shadow: 0px 1px 3px grey;
+    height: 70px;
+  }
+  /* line 201, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .left {
+    width: 33.33%;
+  }
+  /* line 204, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right {
+    width: 33.33%;
+  }
+  /* line 207, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .centerLogo {
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: middle;
+  }
+  /* line 211, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .centerLogo img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+  /* line 218, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav:after {
+    display: none;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav {
+    padding: 10px 0;
+    font-size: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999999;
+    overflow: hidden;
+    background-color: #323334;
+    box-shadow: 0px 1px 3px grey;
+    font-size: 0;
+    height: 45px;
+  }
+  /* line 234, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .left {
+    width: 33.33%;
+  }
+  /* line 237, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .right {
+    width: 33.33%;
+  }
+  /* line 240, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .centerLogo {
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: middle;
+  }
+  /* line 244, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav .centerLogo img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+  /* line 251, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_navigation.scss */
+  nav:after {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?8chi7w");
+  src: url("fonts/icomoon.eot?8chi7w#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?8chi7w") format("truetype"), url("fonts/icomoon.woff?8chi7w") format("woff"), url("fonts/icomoon.svg?8chi7w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-times:before {
+  content: "\e900";
+}
+
+/* line 30, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tick:before {
+  content: "\e901";
+}
+
+/* line 33, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plus:before {
+  content: "\e902";
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-minus:before {
+  content: "\e903";
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-equals:before {
+  content: "\e904";
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-divide:before {
+  content: "\e905";
+}
+
+/* line 45, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-right:before {
+  content: "\e906";
+}
+
+/* line 48, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-left:before {
+  content: "\e907";
+}
+
+/* line 51, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-right-thick:before {
+  content: "\e908";
+}
+
+/* line 54, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-left-thick:before {
+  content: "\e909";
+}
+
+/* line 57, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-small:before {
+  content: "\e90a";
+}
+
+/* line 60, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-menu:before {
+  content: "\e90b";
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-list:before {
+  content: "\e90c";
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-large:before {
+  content: "\e90d";
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-home:before {
+  content: "\e90e";
+}
+
+/* line 72, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-forward:before {
+  content: "\e90f";
+}
+
+/* line 75, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-back:before {
+  content: "\e910";
+}
+
+/* line 78, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-rss:before {
+  content: "\e911";
+}
+
+/* line 81, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location:before {
+  content: "\e912";
+}
+
+/* line 84, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-link:before {
+  content: "\e913";
+}
+
+/* line 87, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-image:before {
+  content: "\e914";
+}
+
+/* line 90, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-up-thick:before {
+  content: "\e915";
+}
+
+/* line 93, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-down-thick:before {
+  content: "\e916";
+}
+
+/* line 96, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-starburst:before {
+  content: "\e917";
+}
+
+/* line 99, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-starburst-outline:before {
+  content: "\e918";
+}
+
+/* line 102, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-star:before {
+  content: "\e919";
+}
+
+/* line 105, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-children:before {
+  content: "\e91a";
+}
+
+/* line 108, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-export:before {
+  content: "\e91b";
+}
+
+/* line 111, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-delete:before {
+  content: "\e91c";
+}
+
+/* line 114, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-delete-outline:before {
+  content: "\e91d";
+}
+
+/* line 117, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cloud-storage:before {
+  content: "\e91e";
+}
+
+/* line 120, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-wi-fi:before {
+  content: "\e91f";
+}
+
+/* line 123, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-heart:before {
+  content: "\e920";
+}
+
+/* line 126, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flash:before {
+  content: "\e921";
+}
+
+/* line 129, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cancel:before {
+  content: "\e922";
+}
+
+/* line 132, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-backspace:before {
+  content: "\e923";
+}
+
+/* line 135, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-attachment:before {
+  content: "\e924";
+}
+
+/* line 138, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-move:before {
+  content: "\e925";
+}
+
+/* line 141, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-warning:before {
+  content: "\e926";
+}
+
+/* line 144, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user:before {
+  content: "\e927";
+}
+
+/* line 147, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-radar:before {
+  content: "\e928";
+}
+
+/* line 150, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-open:before {
+  content: "\e929";
+}
+
+/* line 153, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-closed:before {
+  content: "\e92a";
+}
+
+/* line 156, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location-arrow:before {
+  content: "\e92b";
+}
+
+/* line 159, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info:before {
+  content: "\e92c";
+}
+
+/* line 162, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-delete:before {
+  content: "\e92d";
+}
+
+/* line 165, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-add:before {
+  content: "\e92e";
+}
+
+/* line 168, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-pause:before {
+  content: "\e92f";
+}
+
+/* line 171, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-group:before {
+  content: "\e930";
+}
+
+/* line 174, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-pie:before {
+  content: "\e931";
+}
+
+/* line 177, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-line:before {
+  content: "\e932";
+}
+
+/* line 180, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-bar:before {
+  content: "\e933";
+}
+
+/* line 183, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-area:before {
+  content: "\e934";
+}
+
+/* line 186, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-video:before {
+  content: "\e935";
+}
+
+/* line 189, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-point-of-interest:before {
+  content: "\e936";
+}
+
+/* line 192, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-infinity:before {
+  content: "\e937";
+}
+
+/* line 195, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-globe:before {
+  content: "\e938";
+}
+
+/* line 198, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eye:before {
+  content: "\e939";
+}
+
+/* line 201, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cog:before {
+  content: "\e93a";
+}
+
+/* line 204, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-camera:before {
+  content: "\e93b";
+}
+
+/* line 207, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-upload:before {
+  content: "\e93c";
+}
+
+/* line 210, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-scissors:before {
+  content: "\e93d";
+}
+
+/* line 213, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-refresh:before {
+  content: "\e93e";
+}
+
+/* line 216, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pin:before {
+  content: "\e93f";
+}
+
+/* line 219, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-key:before {
+  content: "\e940";
+}
+
+/* line 222, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info-large:before {
+  content: "\e941";
+}
+
+/* line 225, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eject:before {
+  content: "\e942";
+}
+
+/* line 228, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-download:before {
+  content: "\e943";
+}
+
+/* line 231, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom:before {
+  content: "\e944";
+}
+
+/* line 234, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-out:before {
+  content: "\e945";
+}
+
+/* line 237, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-in:before {
+  content: "\e946";
+}
+
+/* line 240, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-numerically:before {
+  content: "\e947";
+}
+
+/* line 243, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-alphabetically:before {
+  content: "\e948";
+}
+
+/* line 246, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-input-checked:before {
+  content: "\e949";
+}
+
+/* line 249, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-calender:before {
+  content: "\e94a";
+}
+
+/* line 252, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-world:before {
+  content: "\e94b";
+}
+
+/* line 255, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-notes:before {
+  content: "\e94c";
+}
+
+/* line 258, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-code:before {
+  content: "\e94d";
+}
+
+/* line 261, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-sync:before {
+  content: "\e94e";
+}
+
+/* line 264, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-shuffle:before {
+  content: "\e94f";
+}
+
+/* line 267, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-repeat:before {
+  content: "\e950";
+}
+
+/* line 270, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-minimise:before {
+  content: "\e951";
+}
+
+/* line 273, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-maximise:before {
+  content: "\e952";
+}
+
+/* line 276, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-loop:before {
+  content: "\e953";
+}
+
+/* line 279, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-anchor:before {
+  content: "\e954";
+}
+
+/* line 282, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-spanner:before {
+  content: "\e955";
+}
+
+/* line 285, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-puzzle:before {
+  content: "\e956";
+}
+
+/* line 288, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-power:before {
+  content: "\e957";
+}
+
+/* line 291, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plane:before {
+  content: "\e958";
+}
+
+/* line 294, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pi:before {
+  content: "\e959";
+}
+
+/* line 297, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-phone:before {
+  content: "\e95a";
+}
+
+/* line 300, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-microphone:before {
+  content: "\e95b";
+}
+
+/* line 303, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-rewind:before {
+  content: "\e95c";
+}
+
+/* line 306, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flag:before {
+  content: "\e95d";
+}
+
+/* line 309, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-adjust-brightness:before {
+  content: "\e95e";
+}
+
+/* line 312, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-waves:before {
+  content: "\e95f";
+}
+
+/* line 315, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-twitter:before {
+  content: "\e960";
+}
+
+/* line 318, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-facebook:before {
+  content: "\e961";
+}
+
+/* line 321, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-dribbble:before {
+  content: "\e962";
+}
+
+/* line 324, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-stop:before {
+  content: "\e963";
+}
+
+/* line 327, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-record:before {
+  content: "\e964";
+}
+
+/* line 330, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-play:before {
+  content: "\e965";
+}
+
+/* line 333, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-fast-forward:before {
+  content: "\e966";
+}
+
+/* line 336, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-eject:before {
+  content: "\e967";
+}
+
+/* line 339, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-vimeo:before {
+  content: "\e968";
+}
+
+/* line 342, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-tumbler:before {
+  content: "\e969";
+}
+
+/* line 345, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-skype:before {
+  content: "\e96a";
+}
+
+/* line 348, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-pinterest:before {
+  content: "\e96b";
+}
+
+/* line 351, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-linkedin:before {
+  content: "\e96c";
+}
+
+/* line 354, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-last-fm:before {
+  content: "\e96d";
+}
+
+/* line 357, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-github:before {
+  content: "\e96e";
+}
+
+/* line 360, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-flickr:before {
+  content: "\e96f";
+}
+
+/* line 363, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-at:before {
+  content: "\e970";
+}
+
+/* line 366, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-times-outline:before {
+  content: "\e971";
+}
+
+/* line 369, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plus-outline:before {
+  content: "\e972";
+}
+
+/* line 372, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-minus-outline:before {
+  content: "\e973";
+}
+
+/* line 375, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tick-outline:before {
+  content: "\e974";
+}
+
+/* line 378, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-large-outline:before {
+  content: "\e975";
+}
+
+/* line 381, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-equals-outline:before {
+  content: "\e976";
+}
+
+/* line 384, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-divide-outline:before {
+  content: "\e977";
+}
+
+/* line 387, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-right-outline:before {
+  content: "\e978";
+}
+
+/* line 390, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chevron-left-outline:before {
+  content: "\e979";
+}
+
+/* line 393, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-right-outline:before {
+  content: "\e97a";
+}
+
+/* line 396, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-left-outline:before {
+  content: "\e97b";
+}
+
+/* line 399, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-small-outline:before {
+  content: "\e97c";
+}
+
+/* line 402, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-menu-outline:before {
+  content: "\e97d";
+}
+
+/* line 405, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-th-list-outline:before {
+  content: "\e97e";
+}
+
+/* line 408, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-news:before {
+  content: "\e97f";
+}
+
+/* line 411, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-home-outline:before {
+  content: "\e980";
+}
+
+/* line 414, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-up-outline:before {
+  content: "\e981";
+}
+
+/* line 417, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-forward-outline:before {
+  content: "\e982";
+}
+
+/* line 420, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-down-outline:before {
+  content: "\e983";
+}
+
+/* line 423, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-back-outline:before {
+  content: "\e984";
+}
+
+/* line 426, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-trash:before {
+  content: "\e985";
+}
+
+/* line 429, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-rss-outline:before {
+  content: "\e986";
+}
+
+/* line 432, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-message:before {
+  content: "\e987";
+}
+
+/* line 435, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location-outline:before {
+  content: "\e988";
+}
+
+/* line 438, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-link-outline:before {
+  content: "\e989";
+}
+
+/* line 441, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-image-outline:before {
+  content: "\e98a";
+}
+
+/* line 444, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-export-outline:before {
+  content: "\e98b";
+}
+
+/* line 447, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cross:before {
+  content: "\e98c";
+}
+
+/* line 450, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-wi-fi-outline:before {
+  content: "\e98d";
+}
+
+/* line 453, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-star-outline:before {
+  content: "\e98e";
+}
+
+/* line 456, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-pause-outline:before {
+  content: "\e98f";
+}
+
+/* line 459, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-mail:before {
+  content: "\e990";
+}
+
+/* line 462, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-heart-outline:before {
+  content: "\e991";
+}
+
+/* line 465, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flash-outline:before {
+  content: "\e992";
+}
+
+/* line 468, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cancel-outline:before {
+  content: "\e993";
+}
+
+/* line 471, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-beaker:before {
+  content: "\e994";
+}
+
+/* line 474, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-move-outline:before {
+  content: "\e995";
+}
+
+/* line 477, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-watch:before {
+  content: "\e996";
+}
+
+/* line 480, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-warning-outline:before {
+  content: "\e997";
+}
+
+/* line 483, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-time:before {
+  content: "\e998";
+}
+
+/* line 486, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-radar-outline:before {
+  content: "\e999";
+}
+
+/* line 489, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-open-outline:before {
+  content: "\e99a";
+}
+
+/* line 492, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-location-arrow-outline:before {
+  content: "\e99b";
+}
+
+/* line 495, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info-outline:before {
+  content: "\e99c";
+}
+
+/* line 498, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-backspace-outline:before {
+  content: "\e99d";
+}
+
+/* line 501, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-attachment-outline:before {
+  content: "\e99e";
+}
+
+/* line 504, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-outline:before {
+  content: "\e99f";
+}
+
+/* line 507, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-delete-outline:before {
+  content: "\e9a0";
+}
+
+/* line 510, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-user-add-outline:before {
+  content: "\e9a1";
+}
+
+/* line 513, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lock-closed-outline:before {
+  content: "\e9a2";
+}
+
+/* line 516, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-group-outline:before {
+  content: "\e9a3";
+}
+
+/* line 519, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-pie-outline:before {
+  content: "\e9a4";
+}
+
+/* line 522, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-line-outline:before {
+  content: "\e9a5";
+}
+
+/* line 525, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-bar-outline:before {
+  content: "\e9a6";
+}
+
+/* line 528, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-chart-area-outline:before {
+  content: "\e9a7";
+}
+
+/* line 531, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-video-outline:before {
+  content: "\e9a8";
+}
+
+/* line 534, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-point-of-interest-outline:before {
+  content: "\e9a9";
+}
+
+/* line 537, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-map:before {
+  content: "\e9aa";
+}
+
+/* line 540, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-key-outline:before {
+  content: "\e9ab";
+}
+
+/* line 543, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-infinity-outline:before {
+  content: "\e9ac";
+}
+
+/* line 546, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-globe-outline:before {
+  content: "\e9ad";
+}
+
+/* line 549, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eye-outline:before {
+  content: "\e9ae";
+}
+
+/* line 552, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-cog-outline:before {
+  content: "\e9af";
+}
+
+/* line 555, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-camera-outline:before {
+  content: "\e9b0";
+}
+
+/* line 558, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-upload-outline:before {
+  content: "\e9b1";
+}
+
+/* line 561, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-support:before {
+  content: "\e9b2";
+}
+
+/* line 564, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-scissors-outline:before {
+  content: "\e9b3";
+}
+
+/* line 567, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-refresh-outline:before {
+  content: "\e9b4";
+}
+
+/* line 570, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-info-large-outline:before {
+  content: "\e9b5";
+}
+
+/* line 573, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-eject-outline:before {
+  content: "\e9b6";
+}
+
+/* line 576, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-download-outline:before {
+  content: "\e9b7";
+}
+
+/* line 579, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-mid:before {
+  content: "\e9b8";
+}
+
+/* line 582, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-low:before {
+  content: "\e9b9";
+}
+
+/* line 585, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-high:before {
+  content: "\e9ba";
+}
+
+/* line 588, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-outline:before {
+  content: "\e9bb";
+}
+
+/* line 591, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-out-outline:before {
+  content: "\e9bc";
+}
+
+/* line 594, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-zoom-in-outline:before {
+  content: "\e9bd";
+}
+
+/* line 597, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tag:before {
+  content: "\e9be";
+}
+
+/* line 600, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tabs-outline:before {
+  content: "\e9bf";
+}
+
+/* line 603, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pin-outline:before {
+  content: "\e9c0";
+}
+
+/* line 606, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-message-typing:before {
+  content: "\e9c1";
+}
+
+/* line 609, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-directions:before {
+  content: "\e9c2";
+}
+
+/* line 612, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-full:before {
+  content: "\e9c3";
+}
+
+/* line 615, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-battery-charge:before {
+  content: "\e9c4";
+}
+
+/* line 618, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pipette:before {
+  content: "\e9c5";
+}
+
+/* line 621, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pencil:before {
+  content: "\e9c6";
+}
+
+/* line 624, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-folder:before {
+  content: "\e9c7";
+}
+
+/* line 627, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-folder-delete:before {
+  content: "\e9c8";
+}
+
+/* line 630, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-folder-add:before {
+  content: "\e9c9";
+}
+
+/* line 633, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-edit:before {
+  content: "\e9ca";
+}
+
+/* line 636, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document:before {
+  content: "\e9cb";
+}
+
+/* line 639, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document-delete:before {
+  content: "\e9cc";
+}
+
+/* line 642, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document-add:before {
+  content: "\e9cd";
+}
+
+/* line 645, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-brush:before {
+  content: "\e9ce";
+}
+
+/* line 648, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\e9cf";
+}
+
+/* line 651, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-thumbs-down:before {
+  content: "\e9d0";
+}
+
+/* line 654, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pen:before {
+  content: "\e9d1";
+}
+
+/* line 657, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-numerically-outline:before {
+  content: "\e9d2";
+}
+
+/* line 660, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-sort-alphabetically-outline:before {
+  content: "\e9d3";
+}
+
+/* line 663, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-last-fm-circular:before {
+  content: "\e9d4";
+}
+
+/* line 666, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-github-circular:before {
+  content: "\e9d5";
+}
+
+/* line 669, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-compass:before {
+  content: "\e9d6";
+}
+
+/* line 672, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-bookmark:before {
+  content: "\e9d7";
+}
+
+/* line 675, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-input-checked-outline:before {
+  content: "\e9d8";
+}
+
+/* line 678, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-code-outline:before {
+  content: "\e9d9";
+}
+
+/* line 681, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-calender-outline:before {
+  content: "\e9da";
+}
+
+/* line 684, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-business-card:before {
+  content: "\e9db";
+}
+
+/* line 687, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e9dc";
+}
+
+/* line 690, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-sync-outline:before {
+  content: "\e9dd";
+}
+
+/* line 693, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e9de";
+}
+
+/* line 696, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-repeat-outline:before {
+  content: "\e9df";
+}
+
+/* line 699, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-loop-outline:before {
+  content: "\e9e0";
+}
+
+/* line 702, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e9e1";
+}
+
+/* line 705, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-switch:before {
+  content: "\e9e2";
+}
+
+/* line 708, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-parallel:before {
+  content: "\e9e3";
+}
+
+/* line 711, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flow-merge:before {
+  content: "\e9e4";
+}
+
+/* line 714, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-document-text:before {
+  content: "\e9e5";
+}
+
+/* line 717, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-clipboard:before {
+  content: "\e9e6";
+}
+
+/* line 720, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-calculator:before {
+  content: "\e9e7";
+}
+
+/* line 723, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-minimise-outline:before {
+  content: "\e9e8";
+}
+
+/* line 726, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-maximise-outline:before {
+  content: "\e9e9";
+}
+
+/* line 729, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e9ea";
+}
+
+/* line 732, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-gift:before {
+  content: "\e9eb";
+}
+
+/* line 735, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-film:before {
+  content: "\e9ec";
+}
+
+/* line 738, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-database:before {
+  content: "\e9ed";
+}
+
+/* line 741, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-bell:before {
+  content: "\e9ee";
+}
+
+/* line 744, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-anchor-outline:before {
+  content: "\e9ef";
+}
+
+/* line 747, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-adjust-contrast:before {
+  content: "\e9f0";
+}
+
+/* line 750, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-world-outline:before {
+  content: "\e9f1";
+}
+
+/* line 753, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-shopping-bag:before {
+  content: "\e9f2";
+}
+
+/* line 756, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-power-outline:before {
+  content: "\e9f3";
+}
+
+/* line 759, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-notes-outline:before {
+  content: "\e9f4";
+}
+
+/* line 762, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-tablet:before {
+  content: "\e9f5";
+}
+
+/* line 765, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-phone:before {
+  content: "\e9f6";
+}
+
+/* line 768, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-laptop:before {
+  content: "\e9f7";
+}
+
+/* line 771, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-device-desktop:before {
+  content: "\e9f8";
+}
+
+/* line 774, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-briefcase:before {
+  content: "\e9f9";
+}
+
+/* line 777, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-stopwatch:before {
+  content: "\e9fa";
+}
+
+/* line 780, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-spanner-outline:before {
+  content: "\e9fb";
+}
+
+/* line 783, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-puzzle-outline:before {
+  content: "\e9fc";
+}
+
+/* line 786, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-printer:before {
+  content: "\e9fd";
+}
+
+/* line 789, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-pi-outline:before {
+  content: "\e9fe";
+}
+
+/* line 792, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-lightbulb:before {
+  content: "\e9ff";
+}
+
+/* line 795, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-flag-outline:before {
+  content: "\ea00";
+}
+
+/* line 798, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-contacts:before {
+  content: "\ea01";
+}
+
+/* line 801, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-archive:before {
+  content: "\ea02";
+}
+
+/* line 804, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-stormy:before {
+  content: "\ea03";
+}
+
+/* line 807, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-shower:before {
+  content: "\ea04";
+}
+
+/* line 810, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-partly-sunny:before {
+  content: "\ea05";
+}
+
+/* line 813, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-downpour:before {
+  content: "\ea06";
+}
+
+/* line 816, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-cloudy:before {
+  content: "\ea07";
+}
+
+/* line 819, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plane-outline:before {
+  content: "\ea08";
+}
+
+/* line 822, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-phone-outline:before {
+  content: "\ea09";
+}
+
+/* line 825, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-microphone-outline:before {
+  content: "\ea0a";
+}
+
+/* line 828, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-windy:before {
+  content: "\ea0b";
+}
+
+/* line 831, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-windy-cloudy:before {
+  content: "\ea0c";
+}
+
+/* line 834, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-sunny:before {
+  content: "\ea0d";
+}
+
+/* line 837, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-snow:before {
+  content: "\ea0e";
+}
+
+/* line 840, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-weather-night:before {
+  content: "\ea0f";
+}
+
+/* line 843, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-stop-outline:before {
+  content: "\ea10";
+}
+
+/* line 846, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-rewind-outline:before {
+  content: "\ea11";
+}
+
+/* line 849, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-record-outline:before {
+  content: "\ea12";
+}
+
+/* line 852, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-play-outline:before {
+  content: "\ea13";
+}
+
+/* line 855, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-fast-forward-outline:before {
+  content: "\ea14";
+}
+
+/* line 858, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-media-eject-outline:before {
+  content: "\ea15";
+}
+
+/* line 861, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-wine:before {
+  content: "\ea16";
+}
+
+/* line 864, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-waves-outline:before {
+  content: "\ea17";
+}
+
+/* line 867, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-ticket:before {
+  content: "\ea18";
+}
+
+/* line 870, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tags:before {
+  content: "\ea19";
+}
+
+/* line 873, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-plug:before {
+  content: "\ea1a";
+}
+
+/* line 876, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-headphones:before {
+  content: "\ea1b";
+}
+
+/* line 879, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-credit-card:before {
+  content: "\ea1c";
+}
+
+/* line 882, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-coffee:before {
+  content: "\ea1d";
+}
+
+/* line 885, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-book:before {
+  content: "\ea1e";
+}
+
+/* line 888, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-beer:before {
+  content: "\ea1f";
+}
+
+/* line 891, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume:before {
+  content: "\ea20";
+}
+
+/* line 894, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume-up:before {
+  content: "\ea21";
+}
+
+/* line 897, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume-mute:before {
+  content: "\ea22";
+}
+
+/* line 900, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-volume-down:before {
+  content: "\ea23";
+}
+
+/* line 903, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-vimeo-circular:before {
+  content: "\ea24";
+}
+
+/* line 906, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-twitter-circular:before {
+  content: "\ea25";
+}
+
+/* line 909, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-pinterest-circular:before {
+  content: "\ea26";
+}
+
+/* line 912, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-linkedin-circular:before {
+  content: "\ea27";
+}
+
+/* line 915, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-facebook-circular:before {
+  content: "\ea28";
+}
+
+/* line 918, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-dribbble-circular:before {
+  content: "\ea29";
+}
+
+/* line 921, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-tree:before {
+  content: "\ea2a";
+}
+
+/* line 924, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-thermometer:before {
+  content: "\ea2b";
+}
+
+/* line 927, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-tumbler-circular:before {
+  content: "\ea2c";
+}
+
+/* line 930, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-skype-outline:before {
+  content: "\ea2d";
+}
+
+/* line 933, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-flickr-circular:before {
+  content: "\ea2e";
+}
+
+/* line 936, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-social-at-circular:before {
+  content: "\ea2f";
+}
+
+/* line 939, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-shopping-cart:before {
+  content: "\ea30";
+}
+
+/* line 942, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-messages:before {
+  content: "\ea31";
+}
+
+/* line 945, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-leaf:before {
+  content: "\ea32";
+}
+
+/* line 948, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_icons.scss */
+.icon-feather:before {
+  content: "\ea33";
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery {
+  font-size: 0;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div {
+  display: inline-block;
+  width: 295px;
+  height: 885px;
+  vertical-align: top;
+}
+
+/* line 12, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .big {
+  width: 295px;
+  height: 590px;
+  font-size: 20px;
+  overflow: hidden;
+  opacity: 0.8;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.17, 0.67, 0.77, 0.38);
+}
+
+/* line 20, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .big img {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  max-height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .big:hover {
+  opacity: 1;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .small {
+  width: 295px;
+  height: 295px;
+  font-size: 20px;
+  overflow: hidden;
+  opacity: 0.8;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.17, 0.67, 0.77, 0.38);
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .small img {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  max-width: 110%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .small:hover {
+  opacity: 1;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/* line 56, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink {
+  background: pink;
+}
+
+/* line 59, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink95 {
+  background: #ffe6ea;
+}
+
+/* line 62, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink90 {
+  background: #ffccd5;
+}
+
+/* line 65, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery div .pink85 {
+  background: #ffb3bf;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery {
+    width: 590px;
+  }
+  /* line 72, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .big {
+    opacity: 1;
+  }
+  /* line 74, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .big:hover {
+    transform: none;
+  }
+  /* line 78, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .small {
+    opacity: 1;
+  }
+  /* line 80, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .small:hover {
+    transform: none;
+  }
+}
+
+@media (min-width: 0) and (max-width: 560px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery {
+    width: 100%;
+  }
+  /* line 88, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div {
+    width: 100%;
+  }
+  /* line 90, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .big {
+    width: 100%;
+    opacity: 1;
+  }
+  /* line 93, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .big:hover {
+    transform: none;
+  }
+  /* line 97, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .small {
+    width: 100%;
+    opacity: 1;
+  }
+  /* line 100, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+  .gallery div .small:hover {
+    transform: none;
+  }
+}
+
+/* line 107, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp {
+  display: none;
+  width: 325px;
+  height: 325px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 99999999;
+  box-shadow: 0px 6px 15px -2px rgba(0, 0, 0, 0.9);
+}
+
+/* line 119, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .window {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 295px;
+  height: 295px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 130, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .window .closebtn {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  top: 0;
+  left: 267px;
+  z-index: 9999999;
+  cursor: pointer;
+  text-shadow: 0px 0px 7px #323334;
+}
+
+/* line 142, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .big {
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* line 145, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .big img {
+  width: 500px;
+  opacity: 1;
+}
+
+/* line 150, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .big:hover {
+  opacity: 1;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+/* line 155, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .big .info {
+  top: 27%;
+}
+
+/* line 159, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .small {
+  opacity: 1;
+}
+
+/* line 161, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .small img {
+  opacity: 1;
+}
+
+/* line 164, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_gallery.scss */
+.gallery #popUp .small:hover {
+  opacity: 1;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup {
+  background: white;
+  padding: 100px 0;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .wrapper {
+  width: 100%;
+  max-width: 1050px;
+  margin: 50px auto 50px auto;
+  text-align: center;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .wrapper h1 {
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .wrapper p {
+  font-size: 14px;
+  color: #848789;
+  line-height: 35px;
+}
+
+@media (min-width: 0) and (max-width: 985px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .wrapper {
+    padding: 0 50px 0 50px;
+    margin: 0 auto 0 auto;
+  }
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .wrapper h1 {
+    font-size: 20px;
+  }
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .wrapper p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta a {
+  border: 1px solid pink;
+  border-radius: 0 10px 10px 0;
+  margin-left: -4px;
+  line-height: 43px;
+  font-size: 14px;
+  display: inline-block;
+  color: #848789;
+  background: pink;
+  text-decoration: none;
+  vertical-align: top;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta a:hover {
+  border: 1px solid #848789;
+  background: #848789;
+  color: pink;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+.signup .cta .input {
+  line-height: 40px;
+  width: 475px;
+  font-size: 17px;
+  color: pink;
+  border-radius: 5px 0 0 5px;
+}
+
+@media (min-width: 0) and (max-width: 985px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .cta {
+    padding: 0 20px 0 20px;
+    margin: 20px auto 20px auto;
+    line-height: 15px;
+  }
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .cta a {
+    font-size: 12px;
+    height: 40px;
+  }
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .cta .input {
+    line-height: 40px;
+    width: 400px;
+    height: 40px;
+    font-size: 12px;
+    color: pink;
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .cta {
+    padding: 0 20px 0 20px;
+    margin: 20px auto 20px auto;
+    line-height: 15px;
+  }
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .cta a {
+    font-size: 12px;
+    height: 40px;
+  }
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_signup.scss */
+  .signup .cta .input {
+    line-height: 40px;
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    color: pink;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info {
+  padding: 50px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info h1 {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info h2 {
+  margin: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info p {
+  font-size: 10px;
+  color: white;
+  line-height: 1.6;
+  margin-top: 15px;
+  text-shadow: 1px 1px 0.5px black;
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info em {
+  font-size: 12px;
+  color: white;
+  line-height: 1.6;
+  font-style: italic;
+  display: block;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info i {
+  color: white;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* line 47, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info .icon {
+  max-width: 140px;
+  height: 50px;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* line 53, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info .icon:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  content: '';
+  height: 1px;
+  background: white;
+  box-shadow: 1px 1px 0.5px #848789;
+}
+
+/* line 63, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_info.scss */
+.info .icon:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 25px;
+  content: '';
+  height: 1px;
+  background: white;
+  box-shadow: 1px 1px 0.5px #848789;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel {
+  margin: 20px auto 20px auto;
+  background: #d8d9da;
+  width: 1180px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 8, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowLeft {
+  display: block;
+  width: 40px;
+  height: 120px;
+  position: absolute;
+  background: #848789;
+  text-decoration: none;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0.8;
+}
+
+/* line 20, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowLeft i {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowLeft i.icon-chevron-left:before {
+  position: relative;
+  left: 2px;
+}
+
+/* line 33, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowLeft i:hover {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowRight {
+  display: block;
+  width: 40px;
+  height: 120px;
+  position: absolute;
+  vertical-align: middle;
+  background: #848789;
+  text-decoration: none;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0.8;
+}
+
+/* line 52, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowRight i {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 59, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .arrowRight i:hover {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .imagesCarousel {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 0;
+  display: inline-block;
+}
+
+/* line 72, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .imagesCarousel li {
+  margin: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 76, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+.carousel .imagesCarousel li img {
+  max-width: 100%;
+  width: 393px;
+  height: 100%;
+  transform: translateY(-55%);
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel {
+    width: 885px;
+    margin: 20px auto 45px auto;
+  }
+  /* line 90, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .left {
+    width: 35px;
+  }
+  /* line 93, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .right {
+    width: 35px;
+  }
+  /* line 98, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .imagesCarousel li img {
+    width: 295px;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 0) and (max-width: 885px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel {
+    width: 590px;
+    margin: 20px auto 45px auto;
+  }
+  /* line 108, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .left {
+    width: 30px;
+  }
+  /* line 111, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .right {
+    width: 30px;
+  }
+  /* line 116, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .imagesCarousel li img {
+    width: 295px;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel {
+    width: 295px;
+    margin: 20px auto 45px auto;
+  }
+  /* line 126, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .left {
+    width: 25px;
+  }
+  /* line 129, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .right {
+    width: 25px;
+  }
+  /* line 134, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_carousel.scss */
+  .carousel .imagesCarousel li img {
+    width: 295px;
+    transform: translateY(-50%);
+  }
+}
+
+/* line 2, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 1180px;
+  height: 150px;
+  margin: 45px auto 45px auto;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list {
+  display: inline-block;
+  width: 290px;
+  height: 150px;
+  vertical-align: top;
+  padding: 15px 0 15px 0;
+  position: relative;
+}
+
+/* line 17, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li {
+  text-align: left;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 12px;
+  color: #848789;
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+}
+
+/* line 24, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li a {
+  color: #848789;
+  text-decoration: none;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+/* line 31, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li a:hover {
+  color: pink;
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li i {
+  border: 1px solid pink;
+  border-radius: 7px;
+  padding: 2px;
+  color: #848789;
+  font-size: 12px;
+  line-height: 3;
+  margin-right: 5px;
+}
+
+/* line 44, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li i:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 49, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li h3 {
+  text-align: left;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 12px;
+  color: #848789;
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* line 59, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list li p {
+  color: #848789;
+  text-decoration: none;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+/* line 69, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+.footer .footer-list:not(:last-child):after {
+  position: absolute;
+  width: 1px;
+  content: '';
+  height: 150px;
+  background: pink;
+  top: 0;
+  right: 0;
+  vertical-align: middle;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 2, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer {
+    width: 590px;
+    margin: 20px auto 20px auto;
+    font-size: 0;
+  }
+  /* line 85, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer .footer-list {
+    width: 25%;
+    margin: 20px auto 10px auto;
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 2, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer {
+    width: 295px;
+    height: 50px;
+    margin: 10px auto 25px auto;
+    font-size: 0;
+  }
+  /* line 97, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer .footer-list {
+    width: 50%;
+    margin: 20px auto 10px auto;
+    display: inline-block;
+  }
+  /* line 101, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer .footer-list:after {
+    display: none;
+  }
+  /* line 105, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer .footer-list:nth-of-type(odd):after {
+    display: block;
+  }
+  /* line 109, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer .footer-list:nth-of-type(even) {
+    right: -30px;
+  }
+  /* line 112, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_footer.scss */
+  .footer .footer-list:last-child {
+    width: 42%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_wot.scss */
+.wot {
+  margin: 30px auto 30px auto;
+}
+
+/* line 3, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_wot.scss */
+.wot em {
+  text-align: center;
+  font-size: 20px;
+  color: #848789;
+  line-height: 1.6;
+  font-style: italic;
+  display: block;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_wot.scss */
+.wot:before {
+  content: '';
+  height: 1px;
+  background: pink;
+  display: block;
+  margin: 20px 35px 30px 35px;
+}
+
+@media (min-width: 0) and (max-width: 985px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_wot.scss */
+  .wot {
+    margin: 20px auto 0 auto;
+    line-height: 15px;
+  }
+  /* line 21, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_wot.scss */
+  .wot em {
+    font-size: 15px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector {
+  width: 100%;
+  margin: 10px 25px;
+  font-size: 0;
+}
+
+/* line 5, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul li {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "Comfortaa", sans-serif, bold;
+  font-size: 10px;
+  color: #848789;
+  text-transform: uppercase;
+  margin: 0 10px 0 10px;
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul li a {
+  color: #848789;
+  text-decoration: none;
+}
+
+/* line 21, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul li a:hover {
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 18, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+  .sector ul li a {
+    font-size: 8px;
+  }
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul li:not(:last-child):after {
+  position: absolute;
+  width: 1px;
+  margin: auto 10px auto 10px;
+  content: '';
+  height: 10px;
+  background: pink;
+  vertical-align: middle;
+  transform: rotate(20deg);
+}
+
+/* line 39, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul li:last-child {
+  font-weight: bold;
+}
+
+/* line 41, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+.sector ul li:last-child a {
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sector.scss */
+  .sector {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards {
+  width: 100%;
+  margin: 30px auto 20px auto;
+  font-size: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 8, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title h1 {
+  display: inline-block;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+  text-align: center;
+}
+
+/* line 20, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title span.result {
+  color: pink;
+  font-weight: initial;
+}
+
+/* line 24, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title a {
+  text-align: center;
+  font-size: 12px;
+  color: #848789;
+  font-style: italic;
+  display: block;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+/* line 32, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title a:hover {
+  color: pink;
+}
+
+/* line 36, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title p {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #848789;
+}
+
+/* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards .title i {
+  font-size: 10px;
+  display: inline-block;
+  margin-left: 5px;
+  color: pink;
+}
+
+/* line 50, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage {
+  display: inline-block;
+  transition: all 0.7s ease-in-out;
+}
+
+/* line 53, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a {
+  width: 210px;
+  height: 260px;
+  margin: 40px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+  border-radius: 30px 0 0 0;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.42);
+  opacity: 0.9;
+}
+
+/* line 65, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a:before {
+  content: '';
+  position: absolute;
+  border-radius: 30px 0 0 0;
+  width: 200px;
+  height: 250px;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  border: 1px solid white;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 79, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a span {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  transform: rotate(-45deg);
+  ransition: all 0.2s ease;
+  z-index: 2;
+}
+
+/* line 91, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a span:after {
+  content: 'new';
+  width: 150px;
+  height: 300px;
+  background-color: #848789;
+  position: absolute;
+  bottom: -275px;
+  right: -72px;
+  box-shadow: -1px -1px 5px 0px white;
+  opacity: 0.9;
+}
+
+/* line 104, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* line 107, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a:hover:before {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+/* line 111, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a:hover span {
+  font-size: 20px;
+  right: 5px;
+  transform: scale(1.2) rotate(-45deg);
+}
+
+/* line 115, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage a:hover span:after {
+  bottom: -250px;
+  right: -72px;
+}
+
+/* line 123, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage img {
+  max-width: 100%;
+}
+
+/* line 126, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .infoPic {
+  position: relative;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* line 130, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .infoPic h2 {
+  top: 0;
+  left: 0;
+  margin: 12px auto 7px auto;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #848789;
+}
+
+/* line 139, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .infoPic p {
+  margin: 7px auto 7px auto;
+  font-size: 10px;
+  text-align: center;
+  color: #848789;
+}
+
+/* line 146, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .btnDetails {
+  text-align: center;
+  vertical-align: middle;
+  margin: -40px;
+}
+
+/* line 150, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .btnDetails .link {
+  border: 1px solid pink;
+  line-height: 20px;
+  font-size: 14px;
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #848789;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: -1px -1px 5px 0px white;
+  transition: all .35s ease-in-out;
+}
+
+/* line 165, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .btnDetails .link:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 169, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+.sectorCards ul .productImage .btnDetails .link:before {
+  background-color: lightgrey;
+  opacity: 0.2;
+}
+
+/*---MEDIA QUERIES---*/
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 183, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+  ul {
+    margin: 0 auto;
+    width: 600px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 190, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+  .title h1 {
+    font-size: 20px;
+  }
+  /* line 194, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_sectorCards.scss */
+  ul {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details {
+  width: 1180px;
+  height: 595px;
+  margin: 30px auto 10px auto;
+  border-radius: 30px 0 0 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details span {
+  position: absolute;
+  background-color: pink;
+  height: 83px;
+  width: 277px;
+  left: -102px;
+  top: -6px;
+  z-index: 6;
+  transform: rotate(313deg);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+  line-height: 30px;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details #imageDetail {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 25px 0 0 0;
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+/* line 37, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details ul {
+  position: absolute;
+  width: 5%;
+  right: 30px;
+  bottom: 20px;
+  z-index: 100000;
+}
+
+/* line 43, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details ul .imageSmall {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 15px 0 0 0;
+  border: 1px solid pink;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: all .35s ease-in-out;
+}
+
+/* line 54, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details ul .imageSmall:first-child {
+  margin-top: 0;
+}
+
+/* line 57, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details ul .imageSmall:hover {
+  transform: scale(1.2);
+  z-index: 4;
+}
+
+/* line 62, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.details ul .imageSmall img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 0 0;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details {
+    width: 885px;
+    height: 446px;
+  }
+  /* line 74, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details span {
+    display: none;
+  }
+  /* line 77, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details .imageSmall {
+    right: 25px;
+    bottom: 20px;
+  }
+  /* line 80, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details .imageSmall li {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 885px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details {
+    width: 590px;
+    height: 298px;
+  }
+  /* line 89, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details span {
+    display: none;
+  }
+  /* line 92, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details .imageSmall {
+    right: 20px;
+    bottom: 10px;
+  }
+  /* line 95, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details .imageSmall li {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  /* line 99, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details .imageSmall li:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details {
+    width: 370px;
+    height: 151px;
+  }
+  /* line 108, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details span {
+    display: none;
+  }
+  /* line 111, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .details .imageSmall {
+    display: none;
+  }
+}
+
+/* line 118, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.jsZoomTouch:after {
+  content: 'Pinch to Zoom';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 127, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.jsZoomMouse {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 138, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.mobileSmallPic {
+  display: none;
+  width: 370px;
+  margin: 0 auto;
+}
+
+/* line 142, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.mobileSmallPic ul {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 145, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.mobileSmallPic ul .imageSmall {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 15px 0 0 0;
+  cursor: pointer;
+}
+
+/* line 154, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.mobileSmallPic ul .imageSmall:first-child {
+  margin-top: 0;
+}
+
+/* line 158, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+.mobileSmallPic ul .imageSmall img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 0 0;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 138, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_details.scss */
+  .mobileSmallPic {
+    display: block;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_cta.scss */
+.cta {
+  margin-top: 50px auto 20px auto;
+  text-align: center;
+}
+
+/* line 4, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_cta.scss */
+.cta a {
+  border: 1px solid pink;
+  line-height: 45px;
+  font-size: 14px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #848789;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 15, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_cta.scss */
+.cta a:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 4, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_cta.scss */
+  .cta a {
+    font-size: 12px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.description {
+  width: 70%;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.description h1 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+  text-align: center;
+}
+
+/* line 14, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.description em {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 9px;
+  color: #848789;
+  display: block;
+}
+
+/* line 21, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.description h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #848789;
+  font-style: italic;
+  display: block;
+}
+
+/* line 29, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.description p {
+  margin: 25px auto 25px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #848789;
+  display: block;
+  line-height: 1.8;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 38, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+  .description h1 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+  .description h2 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  /* line 46, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+  .description p {
+    margin: 15px auto 15px auto;
+    font-size: 8px;
+  }
+}
+
+/* line 52, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.size {
+  font-size: 0;
+  text-align: center;
+}
+
+/* line 55, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.size h3 {
+  margin: 15px auto 20px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #848789;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 64, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.size ul {
+  display: inline-block;
+}
+
+/* line 66, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.size ul li {
+  display: inline-block;
+}
+
+/* line 68, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.size ul li a {
+  margin: 10px 5px 0 5px;
+  border: 1px solid #d8d9da;
+  border-radius: 5px;
+  padding: 5px;
+  color: #848789;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* line 76, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+.size ul li a:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 68, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+  .size ul li a {
+    font-size: 9px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 88, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_description.scss */
+  .size h3 {
+    font-size: 9px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+.related {
+  width: 1180px;
+  height: 45px;
+  border: 1px solid pink;
+  margin: 40px auto 20px auto;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+}
+
+/* line 9, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+.related a {
+  text-transform: uppercase;
+  color: #848789;
+  font-size: 15px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 16, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+.related a:hover {
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+  .related {
+    width: 885px;
+    margin: 20px auto 45px auto;
+  }
+}
+
+@media (min-width: 0) and (max-width: 885px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+  .related {
+    width: 590px;
+    margin: 20px auto 45px auto;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+  .related {
+    width: 295px;
+    margin: 20px auto 0 auto;
+  }
+  /* line 31, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_related.scss */
+  .related a {
+    font-size: 11px;
+    padding: 5px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+.article {
+  margin: 40px auto 20px auto;
+  width: 60%;
+  max-width: 1050px;
+  text-align: center;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+.article h1 {
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+}
+
+/* line 13, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+.article em {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 10px;
+  color: #848789;
+  display: block;
+  font-style: italic;
+}
+
+/* line 22, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+.article p {
+  margin: 60px auto 25px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #848789;
+  display: block;
+  line-height: 1.8;
+}
+
+/* line 29, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+.article p a {
+  text-decoration: none;
+  color: pink;
+}
+
+/* line 32, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+.article p a:hover {
+  color: deeppink;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 38, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_article.scss */
+  .article p {
+    margin: 20px auto 5px auto;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.menuMobile {
+  width: 26px;
+  height: 24px;
+  position: relative;
+  /*hamburguer icon*/
+  /*end hamburguer icon*/
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.menuMobile span {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  width: 26px;
+}
+
+/* line 12, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.menuMobile span:before, .menuMobile span:after {
+  border-radius: 2px;
+  background-color: #848789;
+  content: '';
+  display: block;
+  height: 4px;
+}
+
+/* line 20, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.menuMobile span:before {
+  box-shadow: 0 10px 0 #ffb3bf;
+  margin-bottom: 16px;
+}
+
+/* line 24, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.menuMobile span:hover:before {
+  box-shadow: 0 0 0 #323334;
+  transform: translateY(10px) rotate(45deg);
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.menuMobile span:hover:after {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* line 34, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.btnContainer {
+  position: fixed;
+  display: none;
+  top: 70px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 1px;
+  padding: 5px;
+  z-index: 9999999999999999;
+}
+
+/* line 46, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.btnContainer li {
+  margin-top: 20px;
+  display: block;
+}
+
+/* line 49, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.btnContainer li a {
+  text-decoration: none;
+}
+
+/* line 51, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.btnContainer li a p {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffb3bf;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* line 57, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.btnContainer li a p:hover {
+  color: deeppink;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 34, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+  .btnContainer {
+    top: 46px;
+  }
+}
+
+/* line 67, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.searchBar {
+  margin: 0 auto 40px auto;
+  width: 300px;
+  text-align: center;
+}
+
+/* line 71, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.searchBar input {
+  width: 80%;
+  border-bottom: 1px solid pink;
+  margin: 0 auto;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+  color: pink;
+  font-size: 20px;
+}
+
+/* line 83, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_menuMobile.scss */
+.searchBar i.icon-zoom {
+  display: inline-block;
+  color: pink;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+.about {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 60px auto;
+}
+
+/* line 6, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+.about2 {
+  margin: 40px 5px 20px 5px;
+  width: 590px;
+  text-align: left;
+  display: inline-block;
+}
+
+/* line 11, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+.about2 h2 {
+  width: 450px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #848789;
+}
+
+/* line 18, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+.about2 p {
+  margin-top: 15px;
+  width: 450px;
+  font-size: 12px;
+  color: #848789;
+  display: block;
+  line-height: 1.8;
+}
+
+/* line 27, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+.imageAbout {
+  width: 590px;
+  height: 325px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* line 32, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+.imageAbout img {
+  max-width: 100%;
+  width: 590px;
+}
+
+@media (min-width: 0) and (max-width: 1210px) {
+  /* line 39, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .about2 {
+    width: 390px;
+    margin: 15px 5px 15px 5px;
+  }
+  /* line 42, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .about2 h2 {
+    width: 300px;
+  }
+  /* line 45, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .about2 p {
+    width: 300px;
+  }
+  /* line 49, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .imageAbout {
+    width: 390px;
+    height: auto;
+  }
+}
+
+@media (min-width: 0) and (max-width: 805px) {
+  /* line 56, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .about2 {
+    width: 290px;
+    margin: 10px auto 20px auto;
+  }
+  /* line 59, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .about2 h2 {
+    width: 290px;
+  }
+  /* line 62, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .about2 p {
+    width: 290px;
+    font-size: 10px;
+  }
+  /* line 68, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_about.scss */
+  .imageAbout {
+    width: 290px;
+    height: auto;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form {
+  margin: 40px auto;
+  width: 580px;
+  text-align: center;
+}
+
+/* line 5, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form label {
+  margin: 0 auto;
+  display: block;
+  text-transform: uppercase;
+  color: #848789;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* line 14, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form select {
+  margin: 15px auto 40px auto;
+  display: block;
+  width: 580px;
+  height: 40px;
+  border: 1px solid pink;
+  font-size: 12px;
+  color: #848789;
+}
+
+/* line 23, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form .nameEmail {
+  display: inline-block;
+}
+
+/* line 25, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form .nameEmail label {
+  display: block;
+}
+
+/* line 28, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form .nameEmail input {
+  width: 280px;
+  height: 40px;
+  margin: 15px 7px 40px 0;
+  border-radius: 5px;
+  border: 1px solid pink;
+  font-size: 12px;
+  color: #848789;
+}
+
+/* line 38, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form textarea {
+  width: 580px;
+  height: 200px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 1px solid pink;
+  margin: 15px auto 40px auto;
+  font-size: 12px;
+  color: #848789;
+}
+
+/* line 48, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form a {
+  width: 195px;
+  text-align: center;
+  border: 1px solid pink;
+  border-radius: 10px;
+  line-height: 45px;
+  font-size: 14px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #848789;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 60, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+.form a:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 68, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+  .form {
+    width: 300px;
+  }
+  /* line 70, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+  .form label {
+    font-size: 12px;
+  }
+  /* line 73, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+  .form select {
+    width: 300px;
+    margin: 10px auto 20px auto;
+  }
+  /* line 78, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+  .form .nameEmail input {
+    width: 300px;
+    margin: 10px auto 20px auto;
+  }
+  /* line 83, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+  .form textarea {
+    width: 300px;
+    margin: 10px auto 20px auto;
+  }
+  /* line 87, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_form.scss */
+  .form a {
+    width: 100px;
+    font-size: 12px;
+    line-height: 35px;
+    padding: 0px 5px 0px 5px;
+  }
+}
+
+/* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm {
+  position: fixed;
+  display: none;
+  top: 80px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999999999999999;
+}
+
+/* line 13, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn {
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
+/* line 16, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn label {
+  margin: 40px auto 0 auto;
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* line 24, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn .nameEmail {
+  display: inline-block;
+}
+
+/* line 26, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn .nameEmail label {
+  display: block;
+}
+
+/* line 29, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn .nameEmail input {
+  width: 280px;
+  height: 40px;
+  margin: 10px 20px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid pink;
+  font-size: 12px;
+  color: #848789;
+}
+
+/* line 40, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn a {
+  width: 95px;
+  text-align: center;
+  border: 1px solid pink;
+  border-radius: 10px;
+  line-height: 45px;
+  font-size: 14px;
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+  color: #848789;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 53, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn a:hover {
+  border: 1px solid #848789;
+  color: pink;
+}
+
+/* line 58, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn .register {
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #848789;
+  line-height: 0px;
+  text-decoration: none;
+  width: auto;
+  border: none;
+  border-radius: 0;
+  padding: 0px;
+}
+
+/* line 70, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+.logForm #logIn .register:hover {
+  border: 0px;
+  color: pink;
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+  .logForm {
+    top: 70px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  /* line 1, /Users/trepa/Desktop/EDIT/MÓDULO JAVASCRIPT/EXERCICIO 02/PROJECTO EDIT/scss/_logIn.scss */
+  .logForm {
+    top: 46px;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */
