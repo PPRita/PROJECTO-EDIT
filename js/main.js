@@ -189,30 +189,6 @@ $('.details').zoom({
 
 
 
-    //Search Result
-
-     $('input').keypress(function(e) {
-
-          if(e.which == 13){
-
-            //alert('You pressed enter!');
-            var value = $('.input').val();
-            //alert(value);
-            //$( window ).load(function() { 
-            	window.location = 'search_result.html';
-				  return;
-				//});
-
-            $( ".result" ).text(value);
-
-          }
-
-          //Não estou a conseguir que o .result seja substituído pelo value
-
-          
-    }); 
-
-
 
 
 
